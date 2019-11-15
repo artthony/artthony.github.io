@@ -2,5 +2,9 @@ body {
   background-color: #add8e6;
 }
 h1 {
-  align-content: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+p {
+  font-family: serif;
 }
