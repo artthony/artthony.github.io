@@ -23,9 +23,11 @@ li {
   font-family: sans-serif;
   list-style-type: none;
   color: rgb(224, 224, 235);
-  background-color: rgb(31, 31, 46);
 }
 .title {
   padding: 50px 100px;
+  background-color: rgb(31, 31, 46);
+}
+.navbar {
   background-color: rgb(31, 31, 46);
 }
