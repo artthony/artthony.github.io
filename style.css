@@ -11,11 +11,8 @@ p {
 .heading {
   padding: 10px;
 }
-.navbar {
-
-}
-ul {
-  display: block;
+li {
+  display: inline;
   text-align: center;
   font-family: sans-serif;
   list-style-type: none;
