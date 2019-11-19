@@ -12,7 +12,11 @@ p {
   padding: 10px;
 }
 .navbar {
+
+}
+ul {
   display: inline;
-  align-items: center;
+  text-align: center;
   font-family: sans-serif;
+  list-style-type: none;
 }
