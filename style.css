@@ -14,13 +14,17 @@ p {
 ul {
   text-align: center;
   list-style: inside;
-  padding: 0;
+  padding: 0px;
 }
 li {
-  padding: 10;
+  padding: 10px;
   display: inline-block;
   text-align: center;
   font-family: sans-serif;
   list-style-type: none;
+  background-color: rgb(31, 31, 46);
+}
+.title {
+  padding: 50px 100px;
   background-color: rgb(31, 31, 46);
 }
