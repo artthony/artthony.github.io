@@ -22,6 +22,7 @@ li {
   text-align: center;
   font-family: sans-serif;
   list-style-type: none;
+  color: rgb(224, 224, 235);
   background-color: rgb(31, 31, 46);
 }
 .title {
