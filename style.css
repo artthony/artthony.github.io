@@ -15,7 +15,7 @@ p {
 
 }
 ul {
-  display: inline;
+  display: block;
   text-align: center;
   font-family: sans-serif;
   list-style-type: none;
