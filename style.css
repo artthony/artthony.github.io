@@ -11,3 +11,8 @@ p {
 .heading {
   padding: 10px;
 }
+.navbar {
+  display: inline;
+  align-items: center;
+  font-family: sans-serif;
+}
