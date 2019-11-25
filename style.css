@@ -13,7 +13,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: rgb(224, 224, 235);
+  /*color: rgb(224, 224, 235);*/
 }
 .heading {
   padding: 10px;
