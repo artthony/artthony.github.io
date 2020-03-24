@@ -7,13 +7,19 @@ h1 {
 }
 h3 {
   font-family: sans-serif;
+  text-decoration: underline;
 }
 p {
   font-family: serif;
 }
 a {
   text-decoration: none;
-  /*color: rgb(224, 224, 235);*/
+}
+a:link {
+  color: rgb(224, 224, 235);
+}
+a:visited {
+  color: rgb(162, 162, 195);
 }
 .heading {
   padding: 10px;
@@ -24,7 +30,7 @@ ul {
   list-style: inside;
   padding: 0px;
 }
-li {
+li.nav {
   padding: 10px;
   display: inline-block;
   text-align: center;
@@ -38,4 +44,31 @@ li {
 }
 .navbar {
   background-color: rgb(31, 31, 46);
+}
+.main {
+  padding: 0px 5px;
+}
+a.fullsize {
+  color: rgb(31, 31, 46);
+  font-family: sans-serif;
+}
+ul.blocks{
+  text-align: left;
+  list-style: none;
+  padding-left: 10px;
+}
+a.parag{
+  font-family: serif;
+  color: black;
+}
+li {
+  padding: 10px 0px;
+}
+img {
+  max-width: 500px;
+  margin: 0px 10px;
+}
+img.fullimg {
+  border: 5px solid black;
+  border-radius: 4px;
 }
