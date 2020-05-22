@@ -7,38 +7,45 @@
   </head>
   <body>
     <div class="title">
-      <h1 class="heading">hello! my name is anthony.</h1>
+      <h1 class="heading" id="titlebox">hello! my name is anthony.</h1>
     </div>
-    <div class="navbar">
+    <!--<div class="navbar">
       <ul>
         <li class="nav"><a href="#githubandcoding">GITHUB & CODING</a></li>
         <li class="nav"><a href="#digitaldesign">DIGITAL DESIGN</a></li>
         <li class="nav"><a href="#about">ABOUT</a></li>
       </ul>
-    </div>
-    <div class="main">
+    </div>-->
+    <div class="main" id="fade-in">
+      <div id="about">
+        <h3>about me.</h3>
+        <p>my name is anthony maocheia-ricci, and i'm a grade 12 (senior) student in ontario! i've always had a love for computers, and have recently started to learn and explore various coding languages (and markup ones too!). i will be going to the university of waterloo for computer science (class of 2025), and i hope to work in the software industry in the future.
+        <br/><br/>
+        i have been using java in class for 3 years now (grades 10, 11 and 12), and have a fair knowledge on how to use it. i have also been self-teaching myself html and css concurrently.
+        <br/><br/>
+        i have worked at my karate dojo and have my black belt, teaching classes and greeting students at the front desk, along with being a summer camp leader (summer of 2018 & 2019) with my city's parks and recreation department, teaching science and reading-based camps to kids of all ages.
+        <br/><br/>
+        you can find me on twitter here: <a class="parag" href="https://twitter.com/artthony">@artthony</a>
+        </p>
+      </div>
       <div id="githubandcoding">
-        <h3>code.</h3>
+        <h3>code&projects.</h3>
         <ul class="blocks">
           <li>
             <a class="fullsize" href="https://github.com/artthony">GITHUB</a>
-            <p>code from school, and a little bit of contest aswell</p>
+            <p>➯ code from school, and a little bit of contest aswell</p>
           </li>
           <li>
             <a class="fullsize" href="https://www.openprocessing.org/user/140487">OPENPROCESSING</a>
-            <p>fun stuff i made with my free time</p>
+            <p>➯ fun stuff i made with my free time</p>
           </li>
           <li>
             <a class="fullsize" href="https://www.greenfoot.org/scenarios/25174">GREENFOOT GAME : POW POW PUNCH MAN</a>
-            <p>final assignment for ICS4U, co-developed with anthony tieu: <a class="parag" href="https://github.com/TonyTheTurtle?tab=repositories">(TonyTheTurtle)</a> </p>
-          </li>
-          <li>
-            <a class="fullsize" href="https://dmoj.ca/user/artthony">DMOJ</a>
-            <p>some CCC prep, not much though</p>
+            <p>➯ final assignment for ICS4U, co-developed with anthony tieu: <a class="parag" href="https://github.com/TonyTheTurtle?tab=repositories">(TonyTheTurtle)</a> </p>
           </li>
         </ul>
       </div>
-      <div id="digitaldesign">
+      <!--<div id="digitaldesign">
         <h3>digital design and media.</h3>
         <ul class="blocks">
           <li>
@@ -52,12 +59,14 @@
             <p>after taken a few digital media classes throughout high school, i have good photoshop skills and light knowledge of the adobe creative suite.</p>
           </li>
         </ul>
-      </div>
-      <div id="about">
-        <h3>about me.</h3>
-        <p>my name is anthony, and i'm a grade 12 (senior) student in ontario! i've always had a love for computers, and have recently started to learn and explore various coding languages (and markup ones too!). i will be going to the university of waterloo for computer science (class of 2025), and i hope to work in the software industry in the future.</p>
-      </div>
+      </div>-->
     <!--<p>this is a bruh moment. spark better be ready for this html babey</p>-->
     </div>
+
+    <script src="fittext.js"></script>
+    <script type="text/javascript">
+      <!-- from https://github.com/adactio/FitText.js -->
+      window.fitText(document.getElementById("titlebox"), 0.5);
+    </script>
   </body>
 </html>

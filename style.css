@@ -1,28 +1,31 @@
 body {
-  background-color: #e0e0eb;
+  background-color: rgb(51, 49, 54);
 }
 h1 {
-  text-align: center;
-  font-family: sans-serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 h3 {
-  font-family: sans-serif;
+  color: rgb(193, 193, 215);
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-decoration: underline;
 }
 p {
-  font-family: serif;
+  color: rgba(146, 146, 185);
+  font-family: "Lucida Console", Monaco, monospace;
 }
 a {
   text-decoration: none;
 }
 a:link {
-  color: rgb(224, 224, 235);
+  color: rgb(177, 177, 205);
 }
 a:visited {
-  color: rgb(162, 162, 195);
+  color: rgb(177, 177, 205);
 }
 .heading {
+  max-width: 100%;
   padding: 10px;
+  text-align: center;
   color: rgb(224, 224, 235);
 }
 ul {
@@ -39,17 +42,21 @@ li.nav {
   color: rgb(224, 224, 235);
 }
 .title {
-  padding: 50px 100px;
-  background-color: rgb(31, 31, 46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-color: rgb(38, 36, 40);
 }
 .navbar {
-  background-color: rgb(31, 31, 46);
+  background-color: rgb(38, 36, 40);
 }
 .main {
   padding: 0px 5px;
+  font-size-adjust: auto;
 }
 a.fullsize {
-  color: rgb(31, 31, 46);
+  color: rgb(177, 177, 205);
   font-family: sans-serif;
 }
 ul.blocks{
@@ -58,8 +65,8 @@ ul.blocks{
   padding-left: 10px;
 }
 a.parag{
-  font-family: serif;
-  color: black;
+  font-family: "Courier New", Courier, monospace;
+  color: rgba(146, 146, 185);
 }
 li {
   padding: 10px 0px;
@@ -71,4 +78,55 @@ img {
 img.fullimg {
   border: 5px solid black;
   border-radius: 4px;
+}
+/* fade in and out code from: https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08*/
+#fade-in {
+  animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 4s;
+  -moz-animation: fadeIn ease 4s;
+  -o-animation: fadeIn ease 4s;
+  -ms-animation: fadeIn ease 4s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
 }
