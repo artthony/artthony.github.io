@@ -1,20 +1,26 @@
 body {
-  background-color: rgb(51, 49, 54);
+  /*background-color: rgb(51, 49, 54);*/
+  background-color: #333136;
+  backdrop-filter: blur(5px);
+  opacity: 75%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='344' height='344' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%234c4950' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23645775'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  /* background by SVGBackgrounds.com */
 }
-h1 {
+h2 {
+  flex-grow: 5;
+  color: rgb(193, 193, 215);
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 10vmin;
 }
 h3 {
   color: rgb(193, 193, 215);
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  text-decoration: underline;
 }
 p {
   color: rgba(146, 146, 185);
   font-family: "Lucida Console", Monaco, monospace;
 }
 a {
+  display: inline;
   text-decoration: underline;
 }
 a:link {
@@ -23,70 +29,50 @@ a:link {
 a:visited {
   color: rgb(177, 177, 205);
 }
-.heading {
-  max-width: 100%;
-  padding: 10px;
-  text-align: center;
-  color: rgb(224, 224, 235);
-}
-ul {
-  text-align: center;
-  list-style: inside;
-  padding: 0px;
-}
-li.nav {
-  padding: 10px;
-  display: inline-block;
-  text-align: center;
-  font-family: sans-serif;
-  list-style-type: none;
-  color: rgb(224, 224, 235);
-}
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  background-color: rgb(38, 36, 40);
-}
-.navbar {
-  background-color: rgb(38, 36, 40);
-}
-.main {
-  padding: 0px 5px;
-  font-size-adjust: auto;
-}
 a.fullsize {
   color: rgb(177, 177, 205);
   font-family: sans-serif;
-}
-ul.blocks{
-  text-align: left;
-  list-style: none;
-  padding-left: 10px;
 }
 a.parag{
   font-family: "Courier New", Courier, monospace;
   color: rgba(146, 146, 185);
 }
-li {
-  padding: 10px 0px;
+.page {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
-img {
-  max-width: 500px;
-  margin: 0px 10px;
+.info {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(38, 36, 40);
+  margin: 10vh 15vw;
+  padding: 3vmin;
+  border-radius: 5%;
 }
-img.fullimg {
-  border: 5px solid black;
-  border-radius: 4px;
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-/* fade in and out code from: https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08*/
+.parag {
+  display: flex;
+  flex-direction: column;
+}
+
+/* fade in and out code from: 
+https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08*/
 #fade-in {
-  animation: fadeIn ease 4s;
-  -webkit-animation: fadeIn ease 4s;
-  -moz-animation: fadeIn ease 4s;
-  -o-animation: fadeIn ease 4s;
-  -ms-animation: fadeIn ease 4s;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
 }
 @keyframes fadeIn {
   0% {
@@ -130,4 +116,57 @@ img.fullimg {
   }
   100% {
     opacity:1;
+  }
 }
+
+/* old styles from oldsite.html
+.heading {
+  max-width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: rgb(224, 224, 235);
+}
+ul {
+  text-align: center;
+  list-style: inside;
+  padding: 0px;
+}
+li.nav {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  font-family: sans-serif;
+  list-style-type: none;
+  color: rgb(224, 224, 235);
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-color: rgb(38, 36, 40);
+}
+.navbar {
+  background-color: rgb(38, 36, 40);
+}
+.main {
+  padding: 0px 5px;
+  font-size-adjust: auto;
+}
+ul.blocks{
+  text-align: left;
+  list-style: none;
+  padding-left: 10px;
+}
+li {
+  padding: 10px 0px;
+}
+img {
+  max-width: 500px;
+  margin: 0px 10px;
+}
+img.fullimg {
+  border: 5px solid black;
+  border-radius: 4px;
+}
+*/
