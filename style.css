@@ -15,6 +15,10 @@ h3 {
   color: rgb(193, 193, 215);
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+h4 {
+  color: rgb(193, 193, 215);
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
 p {
   color: rgba(146, 146, 185);
   font-family: "Lucida Console", Monaco, monospace;
@@ -33,7 +37,7 @@ a.fullsize {
   color: rgb(177, 177, 205);
   font-family: sans-serif;
 }
-a.parag{
+a {
   font-family: "Courier New", Courier, monospace;
   color: rgba(146, 146, 185);
 }
@@ -46,7 +50,7 @@ a.parag{
   display: flex;
   flex-direction: column;
   background-color: rgb(38, 36, 40);
-  padding: 3vmin;
+  padding: 7vmin;
   margin: 10vh 15vw;
   border-radius: 5%;
 }
@@ -59,7 +63,16 @@ a.parag{
   display: flex;
   flex-direction: column;
 }
-
+.flip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5%;
+  padding: 1%;
+}
+.flip:hover {
+  background-color: rgb(33, 31, 35);
+}
 /* fade in and out code from: 
 https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08*/
 #fade-in {
