@@ -52,7 +52,7 @@ a {
   background-color: rgb(38, 36, 40);
   padding: 7vmin;
   margin: 10vh 15vw;
-  border-radius: 5%;
+  border-radius: 25px;
 }
 .header {
   display: flex;
