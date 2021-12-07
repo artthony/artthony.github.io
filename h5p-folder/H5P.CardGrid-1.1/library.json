@@ -1,0 +1,23 @@
+{
+    "title": "Card Grid",
+    "machineName": "H5P.CardGrid",
+    "majorVersion": 1,
+    "minorVersion": 1,
+    "patchVersion": 6,
+    "runnable": 1,
+    "coreApi": {
+        "majorVersion": 1,
+        "minorVersion": 0
+    },
+    "author": "Anthony MR",
+    "preloadedJs": [
+        {
+            "path": "h5p-cardgrid.js"
+        }
+    ],
+    "preloadedCss": [
+        {
+            "path": "h5p-cardgrid.css"
+        }
+    ]
+}

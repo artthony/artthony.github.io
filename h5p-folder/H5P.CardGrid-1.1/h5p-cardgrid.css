@@ -1,0 +1,27 @@
+.h5p-cardgrid {
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    display: -moz-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.h5p-cardgrid-card {
+    flex-grow: 1;
+    padding: 5%;
+    margin: 1%;
+    border: none; 
+    border-radius: 7px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.h5p-cardgrid-card:hover, .h5p-cardgrid-card:focus {
+    background-color: #B3B3B3;
+}
+
+.h5p-cardgrid-card h3 {
+    text-decoration: underline;
+}

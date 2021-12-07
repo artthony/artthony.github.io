@@ -1,0 +1,23 @@
+{
+    "title": "Text and Image",
+    "machineName": "H5P.TextNImage",
+    "majorVersion": 1,
+    "minorVersion": 0,
+    "patchVersion": 17,
+    "runnable": 1,
+    "coreApi": {
+        "majorVersion": 1,
+        "minorVersion": 0
+    },
+    "author": "Anthony MR",
+    "preloadedJs": [
+        {
+            "path": "h5p-textnimage.js"
+        }
+    ],
+    "preloadedCss": [
+        {
+            "path": "h5p-textnimage.css"
+        }
+    ]
+}

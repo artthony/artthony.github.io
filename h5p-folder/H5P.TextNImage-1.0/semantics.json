@@ -1,0 +1,41 @@
+[
+    {
+        "name": "sideImage",
+        "type": "image",
+        "label": "Image used on the side"
+    },
+    {
+        "name": "altText",
+        "type": "text",
+        "label": "Alt text for the image"
+    },
+    {
+        "name": "sideToggle",
+        "type": "boolean",
+        "label": "Toggle to place image on right",
+        "desription": "Enable to put image on left. Disable to put on right.",
+        "default": false
+    },
+    {
+        "name": "expandToggle",
+        "type": "boolean",
+        "label": "Toggle to allow image expansion on click",
+        "default": false
+    },
+    {
+        "name": "iconToggle",
+        "type": "boolean",
+        "label": "Enable if image is an icon",
+        "default": false
+    },
+    {
+        "name": "content",
+        "type": "library",
+        "label": "Content type",
+        "importance": "medium",
+        "entity": "content",
+        "options": [
+            "H5P.AdvancedText 1.1"
+        ]
+    }
+]

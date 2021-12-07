@@ -1,0 +1,35 @@
+[
+    {
+        "name": "cards",
+        "type": "list",
+        "label": "Cards",
+        "description": "make sets of cards",
+        "entity": "card",
+        "min": 1,
+        "max": 6,
+        "field": {
+            "name": "content",
+            "type": "group",
+            "label": "Content",
+            "importance": "high",
+            "fields": [
+                {
+                    "name": "title",
+                    "type": "text",
+                    "label": "Title",
+                    "importance": "high"
+                },
+                {
+                    "name": "content",
+                    "type": "library",
+                    "label": "Content type",
+                    "importance": "medium",
+                    "entity": "content",
+                    "options": [
+                        "H5P.AdvancedText 1.1"
+                    ]
+                }
+            ]
+        }
+    }
+]

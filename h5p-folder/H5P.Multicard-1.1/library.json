@@ -1,0 +1,30 @@
+{
+    "title": "Multicard",
+    "machineName": "H5P.Multicard",
+    "majorVersion": 1,
+    "minorVersion": 1,
+    "patchVersion": 15,
+    "runnable": 1,
+    "coreApi": {
+        "majorVersion": 1,
+        "minorVersion": 0
+    },
+    "author": "Anthony MR",
+    "preloadedJs": [
+        {
+            "path": "h5p-multicard.js"
+        }
+    ],
+    "preloadedDependencies": [
+        {
+            "machineName": "FontAwesome",
+            "majorVersion": 4,
+            "minorVersion": 5
+        }
+    ],
+    "preloadedCss": [
+        {
+            "path": "h5p-multicard.css"
+        }
+    ]
+}

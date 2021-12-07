@@ -1,0 +1,44 @@
+.h5p-multicard {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.h5p-card-titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.h5p-card-cards {
+    padding: 1em;
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;
+    border-color: #04C56B;
+}
+
+.h5p-card-title {
+    padding: 1em;
+    background-color: #04C56B;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px 2px 0px 2px;
+    border-color: #04C56B;
+}
+
+.h5p-card-title:hover, .h5p-card-title:focus {
+    background-color: #47d191;
+    border-color: #47d191;
+    cursor: pointer;
+}
+
+.h5p-open-card {
+    background-color: white;
+}
+
+.h5p-open-card:hover, .h5p-open-card:focus {
+    background-color: white;
+    border-color: #47d191;
+    cursor: default;
+}
+

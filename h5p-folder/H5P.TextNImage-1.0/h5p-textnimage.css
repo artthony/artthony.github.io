@@ -1,0 +1,27 @@
+.h5p-textnimage-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4%;
+    gap: 4%;
+}
+
+.h5p-textnimage-text {
+    flex: 2;
+}
+
+.h5p-textnimage-image {
+    flex: 1;
+    max-width: 33%;
+    height: auto;
+}
+
+.h5p-textnimage-icon {
+    max-width: 15%;
+    height: auto;
+}
+
+.h5p-textnimage-image-button:hover, .h5p-textnimage-image-button:focus {
+    opacity: 0.8;
+    cursor: pointer;
+}
