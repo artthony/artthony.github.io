@@ -50,11 +50,6 @@ a {
   flex-direction: column;
   align-content: center;
 }
-@media (orientation: landscape) {
-  .info {
-    margin: 10vh 15vw;
-  }
-}
 .info {
   display: flex;
   flex-direction: column;
@@ -86,7 +81,33 @@ a {
 }
 .title {
   display: flex;
-  
+}
+.images > * {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+  text-align: center;
+}
+@media (orientation: landscape) {
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .images > * {
+    max-width: 45%;
+    padding: 1%;
+  }
+  .info {
+    margin: 10vh 15vw;
+  }
+}
+.subheader {
+  padding: 1.5% 0.5%;
+}
+.subheader > * {
+  display: inline;
 }
 
 /* fade in and out code from: 
