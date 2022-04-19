@@ -169,6 +169,49 @@ https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade
   }
 }
 
+.wave {
+  display: inline-block;
+  animation-name: waving;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes waving {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(30deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.shake {
+  display: inline-block;
+  animation-name: shaking;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes shaking {
+  0% {transform: translate(0px, 0px);}
+  15% {transform: translate(-2px, 2px)}
+  33% {transform: translate(2px, -2px)}
+  45% {transform: translate(0px, 2px)}
+  66% {transform: translate(-2px, -2px)}
+  85% {transform: translate(0px, 2px)}
+  100% {transform: translate(2px, -2px)}
+}
+
+.jitter {
+  display: inline-block;
+  animation-name: jittering;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes jittering {
+  0% {transform: translate(0px, 1px);}
+  100% {transform: translate(0px, -1px);}
+}
+
 /* old styles from oldsite.html
 .heading {
   max-width: 100%;
