@@ -1,41 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://kit.fontawesome.com/1ae644d025.js" crossorigin="anonymous"></script>
-    <title>anthony maocheia-ricci</title>
-  </head>
-  <body>
-    <div class="page">
-      <div class="info" id="fade-in">
-        <div class="header">
-          <h2>hello! <span class="wave">👋</span></h2>
-          <h3><a target="_blank" href="https://github.com/artthony"><i class="fab fa-github-square"></i></a></h3>
-          <h3>&nbsp;<a target="_blank" href="https://www.openprocessing.org/user/140487"><i class="fas fa-parking"></i></i></a></h3>
-          <h3>&nbsp;<a target="_blank" href="https://devpost.com/artthony?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"><i class="fab fa-dev"></i></a></h3>
-          <h3>&nbsp;<a target="_blank" href="https://www.linkedin.com/in/anthony-maocheia-ricci-83b23619a/"><i class="fab fa-linkedin"></i></a></h3>
-        </div>
-        <div class="parag">
-          <p>i'm anthony maocheia-ricci, a student at the university of waterloo. i'm majoring in computer science with a specialization in human-computer interaction, a minor in psychology and other elective work in rhetoric.</p>
-          <p>my interests are in fields such as user experience design, user interface development and interaction design. i'd like to learn more about user experience and human-computer interaction research and also have interest in digital media studies and findings.</p>
-          <p>i can comfortably code and script in html, css, js (including p5 and react), racket, bash, C, C++, and i'm always interested in learning more. you'll find me mainly using figma for any protoyping and design, yet i also have experience with the adobe creative suite and applications like procreate.</p>
-          <!-- p>&nbsp;&nbsp;you can check out some of my projects, including <a href="https://www.openprocessing.org/sketch/1050486">simple shooter: endless</a>, a game i made in p5.js using oop, <a href="https://www.greenfoot.org/scenarios/25174">pow pow punch man</a>, a game made for my culminating assignment in grade 12 computer science with my classmate <a href="https://github.com/TonyTheTurtle?tab=repositories">anthony tieu</a>, and more on my github.</p -->
-          <!--p>you can find my resume <a target="_blank" href="resume.pdf">here</a>, and contact me on linkedin with the link above.</p-->
-        </div>
-        <nav class="navig">
-          <a href="/projects">
-            <div class="flip">
-              <h4>projects 🔁</h4>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>anthony maocheia-ricci</title>
+        <script src="https://kit.fontawesome.com/1ae644d025.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="newstyle.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <header class="headbar">
+            <h1 id="heading">hello.</i></h1>
+            <nav class="desktop">
+                <button id="button-dark" onclick="changeDiv('about')">about</button>
+                <button id="button-dark" onclick="changeDiv('projects')">projects</button>
+                <button id="button-dark" onclick="changeDiv('misc')">misc</button>
+                <!--button id="button-dark" onclick="changeDiv('contact')">contact</button-->
+            </nav>
+            <nav class="mobile">
+                <button id="button-dark" onclick="changeDiv('navigation')" class="icon"><i id="navicon" class="fa-solid fa-bars"></i></button>
+            </nav>
+            <a target="_blank" href="https://www.linkedin.com/in/anthony-maocheia-ricci-83b23619a/"><button id="button-dark" class="icon"><i class="fa-brands fa-linkedin-in"></i></button></a>
+            <button id="button-dark" onclick="swapMode()" class="icon"><i id="modeicon" class="fa-solid fa-sun"></i></button>
+        </header>
+        <div class="page about">
+            <div>
+                <p>i'm anthony maocheia-ricci, a student at the university of waterloo. i'm majoring in computer science with a specialization in human-computer interaction, a minor in psychology and other elective work in rhetoric.</p>
+                <p>my interests are in fields such as user experience design, user interface development and interaction design. i'd like to learn more about user experience and human-computer interaction research and also have interest in digital media studies and findings.</p>
+                <p>i'm currently interning at arctic wolf as a ux designer doing cool things with figma, and have previous experience working in development and instructional design at the university of waterloo's library.</p>
             </div>
-          </a>
-          <a href="/misc">
-            <div class="flip">
-              <h4>misc 🔁</h4>
-            </div>
-          </a>
-        </nav>
-      </div>
-    </div>
-  </body>
+            <object class="svg" data="computer.svg" alt=""></object>
+        </div>
+        <div class="page projects" style="display: none;">
+            <h2>note: WIP</h2>
+            <p>i'm currently redoing this part of my website (well, site as a whole). you can see the old list of projects here:</p>
+            <a href="/projects">link to my projects (old website)</a>
+        </div>
+        <div class="page misc" style="display: none;">
+            <h2>book list.</h2>
+            <p>recently i've been reading books in a wide range of subjects, from ux design, to digital culture, to technology and how to (not) use it as much. my current read list is:</p>
+            <ul>
+                <li><em>Universal Methods of Design</em> by Bella Martin & Bruce Hannington</li>
+                <li><em>The User Experience Team of One</em> by Leah Buley</li>
+                <li><em>Interviewing Users</em> by Steve Portigal</li>
+                <li><em>Digital Minimalism</em> by Cal Newport</li>
+                <li><em>Memes in Digital Culture</em> by Limor Shifman</li>
+                <li><em>Living in Data</em> by Jer Thorp</li>
+                <li><em>The Design of Everyday Things</em> by Don Norman <strong>(IN PROGRESS)</strong></li>
+            </ul>
+            <p>as well, my backlog consists of:</p>
+            <ul>
+                <li><em>Because Internet</em> by Gretchen McChulloch</li>
+                <li><em>Understanding Industrial Design</em> by Simon King & Kuen Chang</li>
+            </ul>
+            <p>i was (graciously) lended the first three books about ux design and research from my supervisor at my first co-op job with the university of waterloo's library after showing interest in ux work.</p>
+            <h2>music.</h2>
+            <p>i listen to a lot of music. as in over 80k minutes in 2021 on spotify. you can see my current obsessions below:</p>
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1EpwTC3Xr4fHXq?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <h2>beliefs.</h2>
+            <p>i have a strong personal belief that tech can be used as a tool for social good if those behind it care deeply enough about the users — and most importantly, remember that they are human. i recognize that i'm still super new to the field of ux, the tech world, and the studies of human interactions with computers and software and everything else that runs our digital worlds, but from what i've learned and personally experienced, we <strong>can</strong> use these devices to make positive change in the world; socially, environmentally, whatever.</p>
+            <p>a scholar that keeps popping up in every elective i seem to take is marshall mcluhan (granted i've been mainly taking media, rhetoric and psychology electives) and one of his beliefs is that media and technology can be "extensions of man". everything we do for our user's digital experience, we do for the human behind the screen too.</p>
+        </div>
+        <div class="page contact" style="display: none;">
+            <p>you can find me pretty much anywhere, but mainly on:</p>
+            
+
+        </div>
+        <div class="page navigation" style="display: none;">
+            <nav style="flex-direction: column;">
+                <button id="button-dark" onclick="changeDiv('about')">about</button>
+                <button id="button-dark" onclick="changeDiv('projects')">projects</button>
+                <button id="button-dark" onclick="changeDiv('misc')">misc</button>
+                <!--button id="button-dark" onclick="changeDiv('contact')">contact</button--> 
+            </nav>
+        </div>
+    </body>
 </html>
