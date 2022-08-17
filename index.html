@@ -13,16 +13,16 @@
         <header class="headbar">
             <h1 id="heading">hello.</i></h1>
             <nav class="desktop">
-                <button id="button-dark" onclick="changeDiv('about')">about</button>
-                <button id="button-dark" onclick="changeDiv('projects')">projects</button>
-                <button id="button-dark" onclick="changeDiv('misc')">misc</button>
+                <button class="button-dark" onclick="changeDiv('about')">about</button>
+                <button class="button-dark" onclick="changeDiv('projects')">projects</button>
+                <button class="button-dark" onclick="changeDiv('misc')">misc</button>
                 <!--button id="button-dark" onclick="changeDiv('contact')">contact</button-->
             </nav>
             <nav class="mobile">
-                <button id="button-dark" onclick="changeDiv('navigation')" class="icon"><i id="navicon" class="fa-solid fa-bars"></i></button>
+                <button class="icon button-dark" onclick="changeDiv('navigation')" class="icon"><i id="navicon" class="fa-solid fa-bars"></i></button>
             </nav>
             <a target="_blank" href="https://www.linkedin.com/in/anthony-maocheia-ricci-83b23619a/"><button id="button-dark" class="icon"><i class="fa-brands fa-linkedin-in"></i></button></a>
-            <button id="button-dark" onclick="swapMode()" class="icon"><i id="modeicon" class="fa-solid fa-sun"></i></button>
+            <button class="icon button-dark" onclick="swapMode()" class="icon"><i id="modeicon" class="fa-solid fa-sun"></i></button>
         </header>
         <div class="page about">
             <div>
@@ -33,9 +33,67 @@
             <object class="svg" data="computer.svg" alt=""></object>
         </div>
         <div class="page projects" style="display: none;">
-            <h2>note: WIP</h2>
+            <!--h2>note: WIP</h2>
             <p>i'm currently redoing this part of my website (well, site as a whole). you can see the old list of projects here:</p>
-            <a href="/projects">link to my projects (old website)</a>
+            <a href="/projects">link to my projects (old website)</a-->
+            <div class="accord-dark" id="aw">
+                <button class="accordpanel" onclick="swapInfo('aw')"><i class="fa-solid fa-chevron-right"></i><h2>arctic wolf: UI reorgnization project</h2></button>
+                <span class="accordinfo"><em><p>how can we improve efficiency with limited screen real estate?</p></em></span>
+                <div class="accordbody" style="display: none;">
+                    <p>throughout my work term at arctic wolf, i was tasked with a large UX research project regarding UI real estate and customization for an internal triaging tool. this project included preliminary research and designs, followed by semi-structured interviews and usability tests, and an iterative design process.</p>
+                    <!--div class="images">
+                        <img src="awpics/baselofi.png" alt="low-fidelity layout of the triage interface">
+                        <img src="awpics/basehifi2.png" alt="high-fidelity layout of the triage interface">
+                    </div-->
+                    <h3>early designs</h3>
+                    <p>to gain an understanding of the tool before entering the interview process with users, i had went through previous interviews and training recordings. from these, i made both low- and high-fidelity mockups on figma in order to gain a deeper understanding of what issues existed and where changes can be made — this lead to the discovery that different users would all have slightly different issues depending on monitor size, position at the company, or general workflow.</p>
+                    <p>these designs were focused on three areas that were known to be pain points: layout organization options, filters, and the analyst notes pane.</p>
+                    <div class="images3">
+                        <img src="awpics/vertrorg2.png" alt="an alternate organization option">
+                        <img src="awpics/filters.png" alt="the first and second iteration of filters">
+                        <img src="awpics/analystnotes2.png" alt="the first iteration of the new analyst notes pane">
+                    </div>
+                    <h3>interviews</h3>
+                    <p>through the interviewing process, i learned about many pain points that users had within the interface and was able to discover new issues to work into my general solutions. these mainly revolved around poor use of space for smaller fields, and a poor UX with scrollable elements throughout the interface. meeting these users proved to be extremely useful, as they were able to help through continued contact within the iterative design phase.</p>
+                    <img src="awpics/sidepanel.png" alt="a new design for a side accordion pane">
+                    <h3>experience vision</h3>
+                    <p>in addition to the project, the company was also engaged in the UX strategy program offered by centre center. in discussion of UX outcomes after research had been underway, an experience vision was created for the general outcome of this project: <strong>if we do a great job with reorgnization options, we will improve the users' lives by tailoring the layout to their workflow so that they can triage more efficiently.</strong></p>
+                    <div class="imagessolo"><img src="awpics/expvision.jpg" alt="The experience vision sketched and created"></div>
+                    <h3>next steps</h3>
+                    <p>after the main research and design iterations were completed, finalized designs were handed off to developers — but an additional part to the project was added. within interviews, issues were brought up about using this triaging interface for deeper investigations and the real estate issues were further stressed. along with findings from previous UXR projects, an ideation and early design phase was started for a new "investigations" interface, with low-fidelity sketches and high-fidelity wireframes created using miro and figma.</p>
+                    <div class="images">
+                        <img src="awpics/investigationslofi.jpg" alt="The first sketch of the investigation UI">
+                        <img src="awpics/investigationshifi.png" alt="The first high-fidelity wireframe of the investigation UI">
+                    </div>
+                </div>
+            </div>
+            <!--div class="accord-dark" id="lib">
+                <button class="accordpanel" onclick="swapInfo('lib')"><i class="fa-solid fa-chevron-right"></i><h2>uw library: instructional design</h2></button>
+                <span class="accordinfo"><em><p>info</p></em></span>
+                <div class="accordbody" style="display: none;"><p>body</p></div>
+            </div-->
+            <div class="accord-dark" id="rest">
+                <button class="accordpanel" onclick="swapInfo('rest')"><i class="fa-solid fa-chevron-right"></i><h2>smaller projects</h2></button>
+                <span class="accordinfo"><em><p>how did i learn about design and development?</p></em></span>
+                <div class="accordbody" style="display: none;">
+                    <p>before entering the field of UX, i had done smaller projects in UI and game development, as well as graphic design.</p>
+                    <h3>UI design</h3>
+                    <h4>recyc-ai:</h4>
+                    <p>an app that helps you sort your waste in the correct bins with the help of AI. personally designed and developed the <a target="_blank" href="https://xd.adobe.com/view/3d7d2107-545c-4ceb-822f-8f74d10b6a63-682e/">prototype</a>, and mainly worked on the UI <a target="_blank" href="https://devpost.com/software/recycai">implementation</a></p>
+                    <h4>spotify messaging app:</h4>
+                    <p>an idea for a messaging client centred around the popular music streaming service, spotify. designed the <a target="_blank" href="https://www.figma.com/proto/OrAqt7I0UA2kkDOgqoQB7Z/spotify-messaging-app?node-id=5%3A78&scaling=min-zoom">prototype</a>.</p>
+                    <h3>game design</h3>
+                    <h4>simple shooter: zone defense</h4>
+                    <p>a simple arcade shooter / zone defense game. <a target="_blank"href="https://openprocessing.org/sketch/1050486">play</a> here.</p>
+                    <h4>pow pow punch man</h4>
+                    <p>a "janky" fighting game for two players. personally worked on all of the character designs, and implemented various features and menus. <a target="_blank" href="https://www.greenfoot.org/scenarios/25174">play</a> here</p>
+                    <h3>graphic design</h3>
+                    <h4>Edu-Action! infographic</h4>
+                    <p>an infographic made to simplify a mathematical research project for the average student's consumption. personally made all designs and customized the layout using figma. <a target="_blank" href="https://www.edu-action.ca/artwork-galleries?pgid=kvcmybp0-1fad4e26-8f88-47f0-bb70-b06f394fe1c9">read</a> here.</p>
+                    <h4>Edu-Action! instructional video</h4>
+                    <p>an instructional video made to relate a statistical concect to popular media forms in order to make learning and understanding easier. made a portion of the drawings and designs for the video. <a target="_blank" href="https://www.youtube.com/watch?v=pO55eteivwc">watch</a> here.</p>
+                </div>
+            </div>
         </div>
         <div class="page misc" style="display: none;">
             <h2>book list.</h2>

@@ -52,12 +52,14 @@ const swapMode = () => {
     if (body.style.backgroundColor != "rgb(200, 215, 212)") {
         // update body
         body.style.backgroundColor = "#C8D7D4"
-        body.style.color = "#192320"
+        body.style.color = "#121A14"
         // update buttons
         const buttons = document.querySelectorAll("button")
         buttons.forEach(b => {
             b.style.borderColor = "#C8D7D4"
-            b.setAttribute('id', 'button-light')
+            if (b.classList.contains('icon')) b.setAttribute('class', 'icon button-light')
+            else if (b.classList.contains('accordpanel')) b.parentElement.setAttribute('class', 'accord-light')
+            else b.setAttribute('class', 'button-light')
         })
         // update svgs
         const svgs = document.querySelectorAll(".svg")
@@ -67,13 +69,15 @@ const swapMode = () => {
         document.querySelector("#modeicon").classList = "fa-solid fa-moon"
     } else { // mode == light
        // update body
-       body.style.backgroundColor = "#556F6B"
+       body.style.backgroundColor = "#192320"
        body.style.color = "#F6F7F5"
        // update buttons
        const buttons = document.querySelectorAll("button")
        buttons.forEach(b => {
-           b.style.borderColor = "#556F6B"
-           b.setAttribute('id', 'button-dark')
+           b.style.borderColor = "#192320"
+           if (b.classList.contains('icon')) b.setAttribute('class', 'icon button-dark') 
+           else if (b.classList.contains('accordpanel')) b.parentElement.setAttribute('class', 'accord-dark')
+           else b.setAttribute('class', 'button-dark')
        })
         // update svgs
         const svgs = document.querySelectorAll(".svg")
@@ -81,5 +85,21 @@ const swapMode = () => {
             s.contentDocument.querySelectorAll(".line").forEach(e => e.style.stroke = "#F6F7F5")
         })
         document.querySelector("#modeicon").classList = "fa-solid fa-sun"
+    }
+}
+
+const swapInfo = id => {
+    const accordion = document.getElementById(id)
+    const panelicon = accordion.querySelector(".accordpanel").querySelector('i')
+    const info = accordion.querySelector(".accordinfo")
+    const body = accordion.querySelector(".accordbody")
+    if (info.style.display === 'none') { // open -> closed
+        body.style.display = 'none'
+        info.style.display = ''
+        panelicon.classList = 'fa-solid fa-chevron-right'
+    } else { // closed -> open
+        body.style.display = ''
+        info.style.display = 'none'
+        panelicon.classList = 'fa-solid fa-chevron-down'
     }
 }

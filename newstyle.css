@@ -2,7 +2,7 @@ html {
     scrollbar-width: none;
 }
 body {
-    background-color: #556F6B;
+    background-color: #192320;
     color: #F6F7F5;
     padding: 10%;
 }
@@ -41,25 +41,40 @@ button {
     background-color: inherit;
     color: inherit;
     border-style: solid;
-    border-color: #556F6B;
+    border-color: #192320;
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
     padding: 8px 32px;
 }
 
+button.accordpanel {
+    border-color: rgba(0, 0, 0, 0) !important;
+    padding: 0% 0.5%;
+    margin: -0.5%;
+}
+
 .icon {
     padding: 8px 8px;
 }
 @media only screen and (min-width: 768px) {
-    #button-dark:hover {
+    .button-dark:hover {
         border-color: #F6F7F5 !important;
         cursor: pointer;
     }
-    #button-light:hover {
-        border-color: #192320 !important;
+    .button-light:hover {
+        border-color: #121A14 !important;
         cursor: pointer;
     }
+    .accordpanel:hover {
+        cursor: pointer;
+    }
+    /*.accord-dark:hover > button {
+        background-color: #425754;
+    }
+    .accord-light:hover > button {
+        background-color: #A7BEB6;
+    }*/
 }
 
 p, ul, li, h3, h4 {
@@ -72,17 +87,40 @@ ul {
 }
 
 a {
+    font-family: 'Open Sans', sans-serif;
+    color: inherit; 
+}
+
+header > a {
     display: inline-flex;
     flex-direction: row;
     align-items: baseline;
-    font-family: 'Open Sans', sans-serif;
-    color: inherit;
     padding-left: 1%;
+}
+
+img + h3, div.images + h3, div.images3 + h3, div.imagessolo + h3 {
+    padding-top: 1%;
+}
+
+h3 ~ h4, h3 + h4 ~ p {
+    padding-left: 1%;
+}
+
+.images, .images3 {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 .page {
     flex-direction: column;
 }
+
 
 .about {
     display: flex;
@@ -92,13 +130,66 @@ a {
     gap: 150px;
 }
 
+.accord-dark, .accord-light {
+    padding: 1%;
+    border-radius: 8px;
+    margin-bottom: 1%;
+    text-align: left;
+}
+
+.accordpanel {
+    border-color: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: inherit;
+}
+
+.accordpanel > h2 {
+    margin: 1%;
+}
+
 .mobile {
     display: none;
 }
 
+@media only screen and (min-width: 768px) {
+    .imagessolo {
+        display: flex;
+        justify-content: center;
+    }
+    .imagessolo > img {
+        max-width: 75%;
+    }
+    .images > img {
+        max-width: 50%;
+    }
+    .images3 > img {
+        max-width: 33%;
+    }
+    .images, .images3 {
+        display: flex;
+        justify-content: space-between;
+        gap: 1%;
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 150%;
+    }
     button {
         font-size: 200%;
+    }
+    button.accordpanel {
+        font-size: 100%;
+        text-align: center;
+    }
+    button.accordpanel > h2 {
+        flex: 1;
     }
     .about {
         flex-direction: column;
