@@ -17,14 +17,15 @@ header {
 }
 
 header > h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 300%;
     flex-grow: 1;
 }
 
 h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 200%;
+    margin-bottom: 0%;
 }
 
 nav {
@@ -43,7 +44,7 @@ button {
     border-style: solid;
     border-color: #192320;
     border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 100%;
     padding: 8px 32px;
 }
@@ -78,7 +79,7 @@ button.accordpanel {
 }
 
 p, ul, li, h3, h4 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
 ul {
@@ -87,7 +88,7 @@ ul {
 }
 
 a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
     color: inherit; 
 }
 
@@ -152,6 +153,10 @@ img {
 
 .mobile {
     display: none;
+}
+
+#heading {
+    font-weight: 700;
 }
 
 @media only screen and (min-width: 768px) {
