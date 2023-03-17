@@ -1,3 +1,8 @@
+let darkbg = "rgba(25, 35, 32, 1)"
+let darktxt = "rgba(253, 254, 241, 1)"
+let lightbg = "rgb(241, 243, 220)"
+let lighttxt = "rgba(44, 66, 52, 1)"
+
 const changeDiv = div => {
     const matches = document.querySelectorAll("div.page")
     const check = document.querySelector(`div.${div}`)
@@ -49,14 +54,14 @@ const changeDiv = div => {
 
 const swapMode = () => {
     const body = document.querySelector("body")
-    if (body.style.backgroundColor != "rgb(200, 215, 212)") {
+    if (body.style.backgroundColor != lightbg) {
         // update body
-        body.style.backgroundColor = "#C8D7D4"
-        body.style.color = "#121A14"
+        body.style.backgroundColor = lightbg
+        body.style.color = lighttxt
         // update buttons
         const buttons = document.querySelectorAll("button")
         buttons.forEach(b => {
-            b.style.borderColor = "#C8D7D4"
+            b.style.borderColor = lightbg
             if (b.classList.contains('icon')) b.setAttribute('class', 'icon button-light')
             else if (b.classList.contains('accordpanel')) b.parentElement.setAttribute('class', 'accord-light')
             else b.setAttribute('class', 'button-light')
@@ -69,12 +74,12 @@ const swapMode = () => {
         document.querySelector("#modeicon").classList = "fa-solid fa-moon"
     } else { // mode == light
        // update body
-       body.style.backgroundColor = "#192320"
-       body.style.color = "#F6F7F5"
+       body.style.backgroundColor = darkbg
+       body.style.color = darktxt
        // update buttons
        const buttons = document.querySelectorAll("button")
        buttons.forEach(b => {
-           b.style.borderColor = "#192320"
+           b.style.borderColor = darkbg
            if (b.classList.contains('icon')) b.setAttribute('class', 'icon button-dark') 
            else if (b.classList.contains('accordpanel')) b.parentElement.setAttribute('class', 'accord-dark')
            else b.setAttribute('class', 'button-dark')

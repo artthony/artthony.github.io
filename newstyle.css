@@ -2,8 +2,8 @@ html {
     scrollbar-width: none;
 }
 body {
-    background-color: #192320;
-    color: #F6F7F5;
+    background: rgba(25, 35, 32, 1);
+    color: rgba(253, 254, 241, 1);
     padding: 10%;
 }
 body::-webkit-scrollbar {
@@ -60,11 +60,11 @@ button.accordpanel {
 }
 @media only screen and (min-width: 768px) {
     .button-dark:hover {
-        border-color: #F6F7F5 !important;
+        border-color: rgba(253, 254, 241, 1) !important;
         cursor: pointer;
     }
     .button-light:hover {
-        border-color: #121A14 !important;
+        border-color: rgba(25, 35, 32, 1) !important;
         cursor: pointer;
     }
     .accordpanel:hover {
