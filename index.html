@@ -28,22 +28,50 @@
         </header>
         <div class="page about">
             <div>
-                <p>i'm anthony maocheia-ricci, a third year undergrad student at the university of waterloo. i'm studying human-computer interaction (under computer science) and psychology, and i've been spending my elective time in rhetoric and semiotic courses.</p>
-                <p>my interests mainly lie in user experience design and human-computer interaction & social computing research. i also have interests in design for accessibility, ethical uses of AI, and sociolingusitics.</p>
+                <p>i'm anthony maocheia-ricci, a fourth year undergrad student at the university of waterloo. i'm studying human-computer interaction (under computer science) and psychology, and i've been spending my elective time in various humanities courses.</p>
+                <p>my interests mainly lie in user experience design and human-computer interaction & social computing research. i also have interests in design for accessibility, sustainability, and sociolingusitics.</p>
                 <p>i'm currently an undergraduate research assistant in prof. edith law's <a href="https://edithlaw.ca/" target="_blank">augmented intelligence lab</a>, researching social computing technologies for equalizing power imbalances in group tasks and technologies that support well-being, have previous industry experience working as a ux designer at arctic wolf and WSIB innovation labs, and in development and instructional design at the university of waterloo's library. i also have experience with run-off sentences.</p>
+                <p>you can contact me on linkedin, or at amaochei at uwaterloo dot ca</p>
                 <p>website made with &lt;3 by <a href="https://github.com/artthony" target="_blank">me, anthony</a></p>
             </div>
             <object class="svg" data="computer.svg" alt=""></object>
         </div>
         <div class="page projects" style="display: none;">
-            <!--h2>note: WIP</h2>
-            <p>i'm currently redoing this part of my website (well, site as a whole). you can see the old list of projects here:</p>
-            <a href="/projects">link to my projects (old website)</a-->
+            <!--div class="accord-dark" id="papers">
+                <button class="accordpanel" onclick="swapInfo('papers')"><i class="fa-solid fa-chevron-right"></i><h2>academic research</h2></button>
+                <span class="accordinfo"><em><p>how might we create technology to discover something new?</p></em></span>
+                <div class="accordbody" style="display: none;"> 
+                    <p>in my work within prof. edith law's <a href="https://edithlaw.ca/" target="_blank">augmented intelligence lab</a>, i've had the opportunity to be a part of various projects who's papers have been submitted to academic conferences. you can find them here:</p>
+                </div>
+            </div-->
+            <div class="accord-dark" id="449">
+                <button class="accordpanel" onclick="swapInfo('449')"><i class="fa-solid fa-chevron-right"></i><h2>CS 449: acadabee</h2></button>
+                <span class="accordinfo"><em><p>how might we make self-led learning easier for all?</p></em></span>
+                <div class="accordbody" style="display: none;">
+                    <p>in the spring 2023 offering of <a href="https://edithlaw.ca/teaching/cs449/s23/index.html" target="_blank">CS 449</a> (human-computer interaction), me and a group of students were tasked with designing an application to help people with DIY or self-led experiential learning. the entire user-centered design process was completed, from informational interviews, to paper mockups and wizard-of-oz studies, to desigining a high-fidelity prototype on figma.</p>
+                    <p>you can read about our group's process <a href="https://medium.com/@epei_24058/cs449-po2d-5dd9c635f14b" target="_blank">on this blog post</a>. even with prior experience in ux, this project was able to strengthen both my research and design skills by introducing me to concepts such as work models and various design strategies such as crazy-8 and storyboarding, and allowing me to learn mobile standards for UX design.</p>
+                    <iframe style="display:block; border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="650" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlgbjOI65Xa42YgevbjLO5E%2FPrototype%3Ftype%3Ddesign%26node-id%3D240-1405%26t%3DRSiWDULv1wXZfBhy-1%26scaling%3Dscale-down%26page-id%3D232%253A2%26starting-point-node-id%3D240%253A1405%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe>
+                </div> 
+            </div>
             <div class="accord-dark" id="wsib">
                 <button class="accordpanel" onclick="swapInfo('wsib')"><i class="fa-solid fa-chevron-right"></i><h2>WSIB innovation lab: employer dashboard</h2></button>
                 <span class="accordinfo"><em><p>how might we centralize information in a complex system?</p></em></span>
                 <div class="accordbody" style="display: none;">
-                    <p>in progress - check back later for updates!</p>
+                    <p>at the WSIB innovation lab, the first half of my work term was spent completing the work done by the prior cohort of co-op students regarding the employer dashboard project with internal WSIB. the prior cohort had completed the scoping, job shadowing, and created low and high-fidelity mockups of the employer dashboard. my cohort's goals were to finalize the design through making components and running moderated and unmoderated usability tests on our figma prototypes.</p>
+                    <h3>componentalizing</h3>
+                    <p>some of our first tasks as a design team were to take the prior design and make components of each UI element in order to make changes post-usability testing easier, and to make the devs' lives easier when turning this into a live proof-of-concept. the full-page dashboard, cards, flags, icons, etc. were all made into components and strung up into one monolith of an interactive prototype. in order to streamline the process as a design team, and to make developer handoff simpler, i spearheaded the use of line awesome's icon font to allow quick changes to UI elements that were turned into components and to avoid the use of detaching instances (almost) altogether.</p>
+                    <div class="images">
+                        <img src="wsibpics/Landing Page - Default.jpg" alt="the landing page view of the employer dashboard.">
+                        <img src="wsibpics/overview.jpg" alt="the main dashboard view of the employer dashboard.">
+                    </div>
+                    <h3>responsiveness</h3>
+                    <p>deemed out of scope for developer work at this point of the project, as a team we designed a responsive half-page layout of the employer dashboard. this was informed by prior job shadowing by the previous cohort, where some employees expressed interest in split-screening their dashboard and other tabs. with the UI elements made into components, much of the work was done in resizing and fixing elements, as well as additional overlays for the sidebar created to adapt to a smaller screen. future proof-of-concepts made by future cohorts would be able to pick this up.</p>
+                    <h3>usability testing</h3>
+                    <p>after finalizing the prototype, both moderated and unmoderated usability tests were held with various employees. after i led the creation of a moderator's guide, our interviews aimed to discover how easily workers could spot and find the relevant information on the dashboard, and determine whether the information provided was relevant for their roles. users spoke their thoughts aloud to us and helped to identify issues with ease of use and navigation. for our unmoderated test, we used Maze, gathering quantitative data on bounce rates of pages and paths taken to finish each task. a System Usability Scale (SUS) was used to gather these ratings and get an overall score on how usable our design was.</p>
+                    <iframe style="display: block; border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="650" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FVAhDvw1R0Q9ikJHjK1Rgls%2FEmployer-Dashboard-Portfolio-Version%3Ftype%3Ddesign%26node-id%3D1-2142%26t%3DGekKFadiACV0uy1u-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2142%26mode%3Ddesign" allowfullscreen></iframe>
+                    <h3>analysis and next steps</h3>
+                    <p>after usability testing, the data was analyized through affinity mapping on a miro board as a team and key issues were flagged and changed immediately. reccomendations for design changes from this data was aggregated and scoped as part of this current proof-of-concept, or for further iterations past our term. our scoped changes were made and prepared for developer handoff and internal approval.</p>
+                    <p>some of our key takeaways as a team involved how to design elements that are meant to be clickable or not - many of our testers assumed that our flag elements were interactive, even though us as designers did not intend this. in addition, we found that there were some inconsistencies in our labels versus the labels currently used in existing internal systems, leading to confusion. both of these issues show the importance of visual and written language in design, and how clear and simple langauge can help designers create more usable systems for all.</p>
                 </div>
             </div>
             <div class="accord-dark" id="aw">
@@ -142,6 +170,14 @@
             </div>
         </div>
         <div class="page misc" style="display: none;">
+            <h2>electives.</h2>
+            <p>i've been described by my friends as 'arts student-coded' which is only fitting given the fact that i thoroughly enjoy taking electives from uw's faculty of arts. here are just a few i recommend:</p>
+            <ul>
+                <li>ENGL 292: Rhetorical Theory and Criticism</li>
+                <li>ENGL 306F: Introduction to Semiotics</li>
+                <li>PSYCH/PHIL 256: Introduction to Cognitive Science</li>
+                <li>PSYCH 320: Language Development</li>
+            </ul>
             <h2>book list.</h2>
             <p>recently i've been reading books in a wide range of subjects, from ux design, to digital culture, to technology and how to (not) use it as much, and more. my current have read list is:</p>
             <ul>
@@ -156,25 +192,26 @@
                 <li><em>Mythologies</em> by Roland Barthes <em>(selected essays & myth today, for a course)</em></li>
                 <li><em>Ruined by Design</em> by Mike Monteiro</li> 
                 <li><em>Design for the Real World</em> by Victor Papanek</li>
+                <li><em>Design as Art</em> by Bruno Munari</li>
             </ul>
-            <p>my in-progress list is:</p>
+            <!--p>my in-progress list is:</p>
             <ul>
-                <li><em>Things We Could Design</em> by Ronald Wakkary</li>
-                <li><em>Cultish</em> by Amanda Montell</li>
-            </ul>
+                
+            </ul-->
             <p>as well, my to read list consists of:</p>
             <ul>
+                <li><em>Things We Could Design</em> by Ronald Wakkary</li>
                 <li><em>The Design of Everyday Things</em> by Don Norman <em>(chap. 4-)</em></li>
                 <li><em>Road to Nowhere</em> by Paris Marx</li>
                 <li><em>The Shame Machine</em> by Cathy O'Neil</li>
                 <li><em>Understanding Industrial Design</em> by Simon King & Kuen Chang</li>
             </ul>
-            <p>i was (graciously) lended the first three books about ux design and research from my supervisor at my first co-op job with the university of waterloo's library after showing interest in ux work. other books are either ones i've caught on the shelf of indigo, or got reccomended to me by happenstance or the algorithm.</p>
+            <p>i was (graciously) lended the first three books about ux design and research from my supervisor at my first co-op job with the university of waterloo's library after showing interest in ux work. other books are either ones i've caught on the shelf of indigo, or got recommended to me by happenstance or the algorithm.</p>
             <h2>music.</h2>
             <p>i listen to a lot of music. as in over 75k minutes in 2022 on spotify. you can see my current obsessions below:</p>
             <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1EpwTC3Xr4fHXq?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             <h2>beliefs.</h2>
-            <p>i have a strong personal belief that tech can be used as a tool for social good if those behind it care deeply enough about the users — and most importantly, remember that they are human. i recognize that i'm still super new to the field of ux, the tech world, and the studies of human interactions with computers and software and everything else that runs our digital worlds, but from what i've learned and personally experienced, we <strong>can</strong> use these devices to make positive change in the world; socially, environmentally, whatever.</p>
+            <p>i have a strong personal belief that tech can be used as a tool for social good if those behind it care deeply enough about the users — and most importantly, remember that they are human. i recognize that i'm still somewhat new to the field of ux, the tech world, and the studies of human interactions with computers and software and everything else that runs our digital worlds, but from what i've learned and personally experienced, we <strong>can</strong> use these devices to make positive change in the world; socially, environmentally, whatever.</p>
             <p><em>"You and I,... everyone on this planet, we live in data, but we have not, as of yet, figured out how to be citizens of it. To not only inhabit data, but also to participate in it, to find agency, to actively engage and meaningfully resist." —Jer Thorp, Living in Data</em></p>
             <h2>font.</h2>
             <p>the font used on this page is <a href="https://brailleinstitute.org/freefont">atkinson hyperlegible</a>, a font that is more readable for people with low vision. it's free to use with google fonts and it looks pretty. i'd recommend it.</p>
