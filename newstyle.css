@@ -16,7 +16,7 @@ header {
     padding: 0px;
 }
 
-header > h1 {
+h1 {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 300%;
     flex-grow: 1;

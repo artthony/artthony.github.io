@@ -68,8 +68,15 @@ const swapMode = () => {
         })
         // update svgs
         const svgs = document.querySelectorAll(".svg")
+        console.log(svgs)
         svgs.forEach(s => {
-            s.contentDocument.querySelectorAll(".line").forEach(e => e.style.stroke = "#192320")
+            s.contentDocument.querySelectorAll(".shape").forEach(e => {
+                e.style.stroke = "#192320"
+                e.style.fill = "#192320"
+            })
+            s.contentDocument.querySelectorAll(".line").forEach(e => {
+                e.style.stroke = "#192320"
+            })
         })
         document.querySelector("#modeicon").classList = "fa-solid fa-moon"
     } else { // mode == light
@@ -87,7 +94,13 @@ const swapMode = () => {
         // update svgs
         const svgs = document.querySelectorAll(".svg")
         svgs.forEach(s => {
-            s.contentDocument.querySelectorAll(".line").forEach(e => e.style.stroke = "#F6F7F5")
+            s.contentDocument.querySelectorAll(".shape").forEach(e => {
+                e.style.stroke = "#F6F7F5"
+                e.style.fill = "#F6F7F5"
+            })
+            s.contentDocument.querySelectorAll(".line").forEach(e => {
+                e.style.stroke = "#F6F7F5"
+            })
         })
         document.querySelector("#modeicon").classList = "fa-solid fa-sun"
     }
