@@ -28,6 +28,17 @@ h2 {
     margin-bottom: 0%;
 }
 
+h3 {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 150%;
+    margin: 1%;
+}
+
+h4 {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 125%;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -53,6 +64,7 @@ button.accordpanel {
     border-color: rgba(0, 0, 0, 0) !important;
     padding: 0% 0.5%;
     margin: -0.5%;
+    gap: 8px;
 }
 
 .icon {
