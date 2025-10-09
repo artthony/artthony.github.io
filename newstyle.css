@@ -90,8 +90,16 @@ button.accordpanel {
     }*/
 }
 
-p, ul, li, h3, h4 {
+p, ul, li, h3, h4, table {
     font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+table, th, td {
+    border: 1px solid rgba(253, 254, 241, 1);
+    border-collapse: collapse;
+}
+th, td {
+    padding: 0.5rem 1rem;
 }
 
 ul {

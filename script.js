@@ -79,6 +79,13 @@ const swapMode = () => {
             })
         })
         document.querySelector("#modeicon").classList = "fa-solid fa-moon"
+        // update tables
+        const tables = document.querySelectorAll("table")
+        tables.forEach(b => b.style.borderColor = "#192320")
+        const ths = document.querySelectorAll("th")
+        ths.forEach(b => b.style.borderColor = "#192320")
+        const tds = document.querySelectorAll("td")
+        tds.forEach(b => b.style.borderColor = "#192320")
     } else { // mode == light
        // update body
        body.style.backgroundColor = darkbg
@@ -103,6 +110,13 @@ const swapMode = () => {
             })
         })
         document.querySelector("#modeicon").classList = "fa-solid fa-sun"
+        // update tables
+        const tables = document.querySelectorAll("table")
+        tables.forEach(b => b.style.borderColor = "#F6F7F5")
+        const ths = document.querySelectorAll("th")
+        ths.forEach(b => b.style.borderColor = "#F6F7F5")
+        const tds = document.querySelectorAll("td")
+        tds.forEach(b => b.style.borderColor = "#F6F7F5")
     }
 }
 
