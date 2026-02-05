@@ -4,7 +4,7 @@ const addImgs = () => {
     const div = document.getElementById('imgs')
     console.log(document.getElementById('imgs'))
 
-    const i = Math.floor(Math.random() * n)
+    const i = Math.floor(Math.random() * n) + 1
     div.innerHTML += `<img src="imgs/${i}.png" alt="" width="400"/>`
 }
 addImgs()
