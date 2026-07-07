@@ -1,5 +1,3 @@
-import p5 from "p5";
-
 class Point { constructor(x, y) { this.x = x; this.y = y } }
 class Agent {
   constructor(points, p) {

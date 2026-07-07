@@ -1,13 +1,13 @@
 {
   "scripts": {
-    "dev": "vite"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.3.2",
-    "p5": "^2.3.0",
-    "tailwindcss": "^4.3.2"
+    "dev": "npx serve .",
+    "build": "npx @tailwindcss/cli -i style.css -o output.css"
   },
   "devDependencies": {
-    "vite": "^8.1.3"
+    "serve": "^14.2.0"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "tailwindcss": "^4.3.2"
   }
 }

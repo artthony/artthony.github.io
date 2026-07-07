@@ -1,5 +1,3 @@
-import p5 from "p5";
-
 const olive100 = getComputedStyle(document.documentElement)
   .getPropertyValue('--color-olive-200')
   .trim();

@@ -1,6 +1,3 @@
-import p5 from "p5";
-import anthonyUrl from './data/anthony.png';
-
 function getSubImageAndColours(img, x, y, radius) {
   let subImage = img.get(x - radius / 2, y - radius / 2, radius, radius)
   subImage.loadPixels()
@@ -113,7 +110,7 @@ let isDesktop
 
 const drawing = (p) => {
   p.setup = async () => {
-    sourceImage = await p.loadImage(anthonyUrl);
+    sourceImage = await p.loadImage('/p5/data/anthony.png');
 
     body = document.getElementById('body');
     bodyComputedStyle = window.getComputedStyle(body);
