@@ -4,312 +4,35 @@
         <meta charset="utf-8">
         <title>anthony maocheia-ricci</title>
         <script src="https://kit.fontawesome.com/1ae644d025.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="script.js"></script>
-        <link rel="stylesheet" type="text/css" href="newstyle.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@2.1.0/lib/p5.min.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="/output.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
-    <body>
-        <header class="headbar">
-            <h1 id="heading">hello.</i></h1>
-            <nav class="desktop">
-                <button class="button-dark" onclick="changeDiv('about')">about</button>
-                <button class="button-dark" onclick="changeDiv('projects')">projects</button>
-                <button class="button-dark" onclick="changeDiv('misc')">misc</button>
-                <!--button id="button-dark" onclick="changeDiv('contact')">contact</button-->
-            </nav>
-            <nav class="mobile">
-                <button class="icon button-dark" onclick="changeDiv('navigation')" class="icon"><i id="navicon" class="fa-solid fa-bars"></i></button>
-            </nav>
-            <a target="_blank" href="https://www.linkedin.com/in/anthony-maocheia-ricci-83b23619a/"><button class="icon button-dark"><i class="fa-brands fa-linkedin-in"></i></button></a>
-            <a href="./resume.pdf" target="_blank"><button class="icon button-dark"><i class="fa-solid fa-file-pdf"></i></button></a>
-            <button class="icon button-dark" onclick="swapMode()" class="icon"><i id="modeicon" class="fa-solid fa-sun"></i></button>
-        </header>
-        <div class="page about">
-            <div>
-                <p>i'm anthony maocheia-ricci, a masters student in human-computer interaction at the university of waterloo. i completed my bachelor's of computer science at uwaterloo specializing in human-computer interaction, minoring in psychology and cognitive science, and spending my elective time in various other social science and humanities courses. <strong>I'll be attending the University of Toronto for my PhD in Information this Fall 2026!</strong></p>
-                <p>my interest mainly lies in social computing and design research, particularly in the design of systems for engagment and deliberation. i'm also interested in participatory action and community-based research methodologies, digital civics, platform urbanism, and community arts.</p>
-                <p>i'm currently an researcher in prof. Edith Law's <a href="https://edithlaw.ca/" target="_blank">augmented intelligence lab</a>, researching social computing technologies for participatory decision making in arts groups, have previous industry experience working as a student intern at the <a href="https://www.communitybasedresearch.ca/" target="_blank" rel="noopener noreferrer">centre for community-based research</a>, ux researcher at theScore, a ux designer at WSIB innovation labs and arctic wolf, and in development and instructional design at the university of waterloo's library. i also have experience with run-off sentences. you can read more about my experiences in detail on my projects page or <a href="./resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>.</p>
-                <p>website made with &lt;3 by <a href="https://github.com/artthony" target="_blank">me, anthony</a></p>
+    <body id="body" class="bg-olive-200 px-8 py-8 mx-auto flex flex-col xl:flex-row gap-8 text-gray-950 justify-center items-center xl:justify-baseline xl:items-start">
+        <div id="content" class="gap-2 flex flex-col">
+            <div class="w-full flex flex-row justify-between items-baseline">
+                <h1 class="text-4xl font-extrabold mb-4 mt-12">hello.</h1>
+                <span class="flex flex-row gap-4">
+                    <a class="hover:cursor-pointer hover:text-olive-700" target="_blank" href="https://scholar.google.com/citations?user=uF-oOEcAAAAJ&hl=en"><button class="cursor-pointer icon button-dark"><i class="fa-solid fa-graduation-cap"></i></button></a>
+                    <a class="hover:cursor-pointer hover:text-olive-700" target="_blank" href="https://www.linkedin.com/in/anthony-maocheia-ricci-83b23619a/"><button class="cursor-pointer icon button-dark"><i class="fa-brands fa-linkedin-in"></i></button></a>
+                </span>
             </div>
-            <object class="svg" data="computer.svg" alt=""></object>
+            <p>i'm anthony maocheia-ricci, a masters student in human-computer interaction at the university of waterloo. i completed my bachelor's of computer science at uwaterloo specializing in human-computer interaction, minoring in psychology and cognitive science, and spending my elective time in various other social science and humanities courses. <strong>i'll be attending the university of toronto for my PhD in information this fall 2026!</strong></p>
+            <p>my interests lie broadly in social/critical computing and design research. recently, i've caught an interest in understanding the technological needs or challenges faced by community organizers, and how we can use arts-based research or creative coding to surface them. in my free time, i enjoy creative coding and digital design.</p>
+            <p>i'm currently an researcher in prof. Edith Law's <a href="https://edithlaw.ca/" target="_blank" class="underline hover:text-olive-700">augmented intelligence lab</a>, researching social computing technologies for participatory decision making in arts groups, have previous industry experience working as a student intern at the <a href="https://www.communitybasedresearch.ca/" target="_blank" rel="noopener noreferrer" class="underline hover:text-olive-700">centre for community-based research</a>, ux researcher at theScore, a ux designer at WSIB innovation labs and arctic wolf, and in development and instructional design at the university of waterloo's library. i also have experience with run-off sentences.</p>
+            <p>website made with &lt;3 by <a href="https://github.com/artthony" target="_blank" class="underline hover:text-olive-700">me, anthony</a></p>
+            <a class="text-2xl font-bold mt-8" href="pubs/" id="publications">publications <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="text-2xl font-bold mt-2" href="./static/resume.pdf" target="_blank" id="cv">cv <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="text-2xl font-bold mt-2" href="misc/" id="misc">miscellaneous <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="page projects" style="display: none;">
-            <div class="accord-dark" id="papers">
-                <button class="accordpanel" onclick="swapInfo('papers')"><i class="fa-solid fa-chevron-right"></i><h2>research writing.</h2></button>
-                <span class="accordinfo"><em><p>how might we conduct research to discover something new?</p></em></span>
-                <div class="accordbody" style="display: none;"> 
-                    <h3>journal and conference papers (peer reviewed)</h3>
-                    <p><strong>Anthony Maocheia-Ricci*</strong>, Nabil Bin Hannan*, Chunxu Yang, Alex Lu, Weldon Scott, Alex Rus, Grace Xu, Michelle Ma, Maggie Guo, Melissa Finn, Namiko Huynh, Bessma Momani, and Edith Law. 2026. Accounting for (Dis)advantages in Capability Sensitive Design for Marginalized Communities. In <em>Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26), April 13-17, 2026, Barcelona, Spain. </em>ACM, New York, NY, USA, 21 pages.&nbsp;&nbsp;[ <a href="https://doi.org/10.1145/3772318.3790338" target="_blank">DOI <i class="fa-solid fa-file-pdf"></i></a> ]</p>
-                    <p>Nabil Bin Hannan, Casey O'Neill, <strong>Anthony Maocheia-Ricci</strong> and Edith Law. 2025. LTJ: A Capability-based Digital Journaling Tool to Support Well-being of Newcomers in Life Transition. <em>Proc. ACM HUm.-Comput. Interact. </em>9, 7 (October 2025), CSCW310:1-CSCW310:18&nbsp;&nbsp;[ <a href="https://dl.acm.org/doi/pdf/10.1145/3757491" target="_blank">DOI <i class="fa-solid fa-file-pdf"></i></a> ]</p>
-                    <h3>workshop papers or proposals (lightly peer reviewed or juried)</h3>
-                    <p>Sejal Agarwal*, Delara Forghani*, Brandon Lit*, Thomas Driscoll* and <strong>Anthony Maocheia-Ricci</strong>*. 2026. What is (H)CI: Why Does the “Human” Matter? <em>Accepted workshop proposal for Graphics Interface 2026</em>&nbsp;&nbsp;[ <a href="https://doi.org/10.48550/arXiv.2605.00109" target="_blank">arxiv <i class="fa-solid fa-file-pdf"></i></a> ]</p>
-                    <p><strong>Anthony Maocheia-Ricci</strong> and Edith Law. 2026. Building a "-Sensitive Design" Methodology from Political Philosophies or Ideologies. In <em>CHIdeology (CHI '26 Workshop)</em>&nbsp;&nbsp;[ <a href="https://doi.org/10.48550/arXiv.2603.17806" target="_blank">arxiv <i class="fa-solid fa-file-pdf"></i></a> ]</p>
-                    <p><strong>Anthony Maocheia-Ricci</strong>. 2026. Citizens <em>Art</em>sembly: Participatory Art-making for Climate Justice. In <em>Designing for "Last Mile" Climate Resilience with Communities (CHI '26 Workshop)</em>&nbsp;&nbsp;[ <a href="https://doi.org/10.6084/m9.figshare.31813759" target="_blank">session proceedings <i class="fa-solid fa-file-pdf"></i></a> ]&nbsp;&nbsp;[ <a href="./889pictorial.pdf" target="_blank">pictorial (for CS 889: HCI for Art) <i class="fa-solid fa-file-pdf"></i></a> ]</p>
-                    <h3>other articles (juried)</h3>
-                    <p>Angela Li, Erin Walshaw, Alexandra Roszczenko, <strong>Anthony Maocheia-Ricci</strong>. 2026. Digital Civics and Community Engagement with Technology. In Submission to <em>Notes from the Margin: Directed Reading Program Articles</em>&nbsp;&nbsp;[ <a href="./DRP_W26_NftM.pdf" target="_blank">PDF <i class="fa-solid fa-file-pdf"></i></a> ] [ <a href="./drp" target="_blank">reading course overview <i class="fa-solid fa-link"></i></a> ]</p>
-                    <h3>research reports or preprints (not peer reviewed)</h3>
-                    <p>Brandon Lit*, <strong>Anthony Maocheia-Ricci</strong>* and Thomas Driscoll*. 2026. Exploring the Output of Software Testing Tools through a Visual Comparative Analysis <em>Course Project for CS 846: Advanced Topics in Software Testing and Debugging</em>&nbsp;&nbsp;[ <a href="https://doi.org/10.48550/arXiv.2605.04189" target="_blank">arxiv <i class="fa-solid fa-file-pdf"></i></a> ]</p>
-                    <p>Janna Martin, Dayan De Souza, <strong>Anthony Maocheia-Ricci</strong>, and Rich Janzen. 2025. <em>Walking with People in Poverty Program Review</em>. Prepared for Mennonite Central Committee Ontario. Centre for Community Based Research, Waterloo, Ontario.</p>
-                </div>
-            </div>
-            <h2>ongoing.</h2>
-            <div class="accord-dark" id="masters">
-                <button class="accordpanel" onclick="swapInfo('masters')"><i class="fa-solid fa-chevron-right"></i><h3>augi lab: participatory decision-making in arts</h3></button>
-                <span class="accordinfo"><em><p>how might we use technology to facilitate participatory and democratic deliberation in groups of multidiciplinary artists?</p></em></span>
-                <div class="accordbody" style="display: none;"> 
-                    <p>being the topic of my master's thesis, this project is <em>just</em> starting. stay tuned for details!</p>
-                </div>
-            </div>
-            <h2>previous.</h2>
-            <div class="accord-dark" id="usra">
-                <button class="accordpanel" onclick="swapInfo('usra')"><i class="fa-solid fa-chevron-right"></i><h3>augi lab x KW4-OHT: newcomers app</h3></button>
-                <span class="accordinfo"><em><p>how might we use technology to support newcomers' health and well-being?</p></em></span>
-                <div class="accordbody" style="display: none;"> 
-                    <p>the newcomer app is a multi-lingual mobile application originating from a collaboration between prof. Edith Law's augmented intelligence lab (ValuesFirst AI) and the KW4 ontario health team. i've been a member of the project team since its' inception in various capacities and roles, working full-time during fall 2023 as an undergraduate research assistant (partially funded by an NSERC USRA award), and fall 2024 as an undergraduate research fellow (funded by both URF and NSERC USRA awards).</p>
-                    <h4>qualitative research</h4>
-                    <p>from may to december 2023, i was engaged in phase 1 (interviews) and 2 (co-design) of the project. the project team ran interviews with 50 newcomers in 9 different languages, 16 members of organizations serving newcomers, and a co-design session with 22 newcomers and 7 organization members. individually, i interviewed 4 organization members and qualitatively coded 100+ hours of interview data from phase 1. the findings from phase 1 were analyzed and summarized for use in future papers. for phase 2, i aided in the planning, setup, and facilitation of the co-design session.</p>
-                    <h4>user-centered design and development</h4>
-                    <p>from january 2024 to april 2025, i've been involved in phase 2.5 (design & development) and 3 (in-field evaluation) of the project. between january to august 2024, i acted as the lead designer, developing figma designs, creating interview guides, facilitating prototype evaluation sessions with organizations, training junior designers, and working with other developers for handoff. from september 2024 to january 2025, i took the role of a full-stack developer to create a new "version 2" of the app, implementing updated designs into a react native application and django server. from january to april 2025 (phase 3), the app was tested by ~40 newcomers in a field study to gain both quantiative data on its efficacy, and i facilitated focus group interviews afterwards for rich qualitative findings.</p>
-                    <h4>more information about the project</h4>
-                    <p>background information about the project can be found both <a href="https://www.kw4oht.com/newcomerapp" target="_blank" rel="noopener noreferrer">on the KW4 website</a>, where additional product information can be found <a href="https://valuesfirst.ai/products/" target="_blank" rel="noopener noreferrer">on the ValuesFirst AI website</a>.</p>
-                    <p><strong>a news article was written about the project!</strong> you can read about it on <a href="https://hriportal.ca/an-app-to-help-newcomers-navigate-health-and-social-services-on-their-own-terms/" target="_blank" rel="noopener noreferrer">the HRI portal blog</a>.</p>
-                    <p><strong>we presented version 1 of the app at WSAI 2024!</strong> check out more details on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7189772959538991104/" target="_blank" rel="noopener noreferrer">linkedin</a>.</p>
-                    <p><strong>a related project i did design work for was published at acm cscw 2025!</strong> LTJ (life transition journal) is a capability-focused journal used to help people undergoing life transitions to manage them. a more coherent and in-depth explanation of the project and findings can be found on the <a href="https://dl.acm.org/doi/pdf/10.1145/3757491" target="_blank" rel="noopener noreferrer">acm digital library</a> (open access! woo!)</p>
-                </div>
-            </div>
-            <div class="accord-dark" id="score">
-                <button class="accordpanel" onclick="swapInfo('score')"><i class="fa-solid fa-chevron-right"></i><h3>theScore: promo page rework</h3></button>
-                <span class="accordinfo"><em><p>how might we improve in navigation and surfacing relevant promotions to patrons?</p></em></span>
-                <div class="accordbody" style="display: none;"> 
-                    <p>at theScore, i worked as a ux researcher on the promos team, working across both theScore BET and ESPN BET platforms. i was able to lead an exploratory research project on the current state of the promotions page in order to understand (a) what users find important to see at-a-glance, (b) users' preferences with respect to relevancy, and (c) pain points and changes we can make with the system.</p>
-                    <h4>intake and planning</h4>
-                    <p>with guidance from Tristan (the promos UXR, and my mentor) and a cross-functional team of stakeholders, i was able to run workshops to gain a deeper understanding of the problem space from a senior perspective. this helped to outline goals and questions, and i affinity mapped the results in order to generate common themes prior to creating a research plan.</p>
-                    <img src="thescorepics/ideationworkshop.png" alt="the figjam board displaying the workshop and affinity mapping process">
-                    <h4>research methodology and analysis</h4>
-                    <p>based on this, i outlined my research questions and took a mixed-methods approach to my research; collecting quantitative metrics through a survey sent to both theScore and ESPN BET users (n = 352) and current live usage data, and qualitative data through semi-structured interviews including an app walkthrough (n = 9). we aimed to get a mixture of sportsbook- and casino-heavy users across both apps' user bases to get a representative sample.</p>
-                    <p>after, interviews were qualitatively coded using an inductive coding strategy through Taguette, and a python script was developed to translate Taguette data to a FigJam-friendly format for use in affinity mapping. multiple rounds of affinity mapping occured, where quotations were first grouped by tag, then mapped into categories, then categories were grouped by research question and further summarized by drawing directly on the figjam board.</p>
-                    <img src="thescorepics/affinitymapping.png" alt="the figjam board displaying the affinty mapping of interview data after being mapped into categories">
-                    <h4>findings and sharing with stakeholders</h4>
-                    <p>when analysis and sense-making were completed, the findings were summarized and packaged into a presentation shared with relevant upper managers in product. quantiative metrics, including CSAT scores from the surveys were visualized in graphs created through matplotlib to understand the current state of (dis)satisfaction. each research question and interview findings related were discussed at length, and relevant recommendations were discussed at the end of each section (see sample slide below).</p>
-                    <div class="imagessolo">
-                        <img src="thescorepics/sampleslide.png" alt="a sample slide outlining a reccommendation for research question 1">
-                    </div>
-                    <p>the presentation finished with a series of overall pain points and concerns derived from the CSAT scores and interview data, along with areas of opportunity and recommendations for future research and design work. afterwards, i was able to take these findings and with design for further workshopping before my term came to an end. i can't thank Tristan (UXR), Danny (PD), Gabe (PM), and Sarah (PM) enough for the opportunity to lead a research project as a co-op and for all the help i got throughout the process!</p>
-                </div>
-            </div>
-            <div class="accord-dark" id="449">
-                <button class="accordpanel" onclick="swapInfo('449')"><i class="fa-solid fa-chevron-right"></i><h3>CS 449: acadabee</h3></button>
-                <span class="accordinfo"><em><p>how might we make self-led learning easier for all?</p></em></span>
-                <div class="accordbody" style="display: none;">
-                    <p>in the spring 2023 offering of <a href="https://edithlaw.ca/teaching/cs449/s23/index.html" target="_blank">CS 449</a> (human-computer interaction), me and a group of students were tasked with designing an application to help people with DIY or self-led experiential learning. the entire user-centered design process was completed, from informational interviews, to paper mockups and wizard-of-oz studies, to desigining a high-fidelity prototype on figma.</p>
-                    <p>in an effort to give credit where credit's due, you can read about myself and my group's process <a href="https://medium.com/@epei_24058/cs449-po2d-5dd9c635f14b" target="_blank">on this blog post</a>. even with prior experience in ux, this project was able to strengthen both my research and design skills by introducing me to concepts such as work models and various design strategies such as crazy-8 and storyboarding, and allowing me to learn mobile standards for UX design.</p>
-                    <iframe style="display:block; border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="650" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlgbjOI65Xa42YgevbjLO5E%2FPrototype%3Ftype%3Ddesign%26node-id%3D240-1405%26t%3DRSiWDULv1wXZfBhy-1%26scaling%3Dscale-down%26page-id%3D232%253A2%26starting-point-node-id%3D240%253A1405%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe>
-                </div> 
-            </div>
-            <div class="accord-dark" id="wsib">
-                <button class="accordpanel" onclick="swapInfo('wsib')"><i class="fa-solid fa-chevron-right"></i><h3>WSIB innovation lab: employer dashboard</h3></button>
-                <span class="accordinfo"><em><p>how might we centralize information in a complex system?</p></em></span>
-                <div class="accordbody" style="display: none;">
-                    <p>at the WSIB innovation lab, the first half of my work term was spent completing the work done by the prior cohort of co-op students regarding the employer dashboard project with internal WSIB. the prior cohort had completed the scoping, job shadowing, and created low and high-fidelity mockups of the employer dashboard. my cohort's goals were to finalize the design through making components and running moderated and unmoderated usability tests on our figma prototypes.</p>
-                    <h4>componentalizing</h4>
-                    <p>some of our first tasks as a design team were to take the prior design and make components of each UI element in order to make changes post-usability testing easier, and to make the devs' lives easier when turning this into a live proof-of-concept. the full-page dashboard, cards, flags, icons, etc. were all made into components and strung up into one monolith of an interactive prototype. in order to streamline the process as a design team, and to make developer handoff simpler, i spearheaded the use of line awesome's icon font to allow quick changes to UI elements that were turned into components and to avoid the use of detaching instances (almost) altogether.</p>
-                    <div class="images">
-                        <img src="wsibpics/Landing Page - Default.jpg" alt="the landing page view of the employer dashboard.">
-                        <img src="wsibpics/overview.jpg" alt="the main dashboard view of the employer dashboard.">
-                    </div>
-                    <h4>responsiveness</h4>
-                    <p>deemed out of scope for developer work at this point of the project, as a team we designed a responsive half-page layout of the employer dashboard. this was informed by prior job shadowing by the previous cohort, where some employees expressed interest in split-screening their dashboard and other tabs. with the UI elements made into components, much of the work was done in resizing and fixing elements, as well as additional overlays for the sidebar created to adapt to a smaller screen. future proof-of-concepts made by future cohorts would be able to pick this up.</p>
-                    <h4>usability testing</h4>
-                    <p>after finalizing the prototype, both moderated and unmoderated usability tests were held with various employees. after i led the creation of a moderator's guide, our interviews aimed to discover how easily workers could spot and find the relevant information on the dashboard, and determine whether the information provided was relevant for their roles. users spoke their thoughts aloud to us and helped to identify issues with ease of use and navigation. for our unmoderated test, we used Maze, gathering quantitative data on bounce rates of pages and paths taken to finish each task. a System Usability Scale (SUS) was used to gather these ratings and get an overall score on how usable our design was.</p>
-                    <iframe style="display: block; border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="650" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FVAhDvw1R0Q9ikJHjK1Rgls%2FEmployer-Dashboard-Portfolio-Version%3Ftype%3Ddesign%26node-id%3D1-2142%26t%3DGekKFadiACV0uy1u-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2142%26mode%3Ddesign" allowfullscreen></iframe>
-                    <h4>analysis and next steps</h4>
-                    <p>after usability testing, the data was analyized through affinity mapping on a miro board as a team and key issues were flagged and changed immediately. reccomendations for design changes from this data was aggregated and scoped as part of this current proof-of-concept, or for further iterations past our term. our scoped changes were made and prepared for developer handoff and internal approval.</p>
-                    <p>some of our key takeaways as a team involved how to design elements that are meant to be clickable or not - many of our testers assumed that our flag elements were interactive, even though us as designers did not intend this. in addition, we found that there were some inconsistencies in our labels versus the labels currently used in existing internal systems, leading to confusion. both of these issues show the importance of visual and written language in design, and how clear and simple langauge can help designers create more usable systems for all.</p>
-                </div>
-            </div>
-            <div class="accord-dark" id="aw">
-                <button class="accordpanel" onclick="swapInfo('aw')"><i class="fa-solid fa-chevron-right"></i><h3>arctic wolf: UI reorgnization project</h3></button>
-                <span class="accordinfo"><em><p>how might we improve efficiency with limited screen real estate?</p></em></span>
-                <div class="accordbody" style="display: none;">
-                    <p>throughout my work term at arctic wolf, i was tasked with a large UX research project regarding UI real estate and customization for an internal triaging tool. this project included preliminary research and designs, followed by semi-structured interviews and usability tests, and an iterative design process.</p>
-                    <!--div class="images">
-                        <img src="awpics/baselofi.png" alt="low-fidelity layout of the triage interface">
-                        <img src="awpics/basehifi2.png" alt="high-fidelity layout of the triage interface">
-                    </div-->
-                    <h4>early designs</h4>
-                    <p>to gain an understanding of the tool before entering the interview process with users, i had went through previous interviews and training recordings. from these, i made both low- and high-fidelity mockups on figma in order to gain a deeper understanding of what issues existed and where changes can be made — this lead to the discovery that different users would all have slightly different issues depending on monitor size, position at the company, or general workflow.</p>
-                    <p>these designs were focused on three areas that were known to be pain points: layout organization options, filters, and the analyst notes pane.</p>
-                    <div class="images3">
-                        <img src="awpics/vertrorg2.png" alt="an alternate organization option, showcasing a vertically stacked inbox">
-                        <img src="awpics/filters.png" alt="the first and second iteration of filters">
-                        <img src="awpics/analystnotes2.png" alt="the first iteration of the new analyst notes pane within the interface">
-                    </div>
-                    <h4>interviews</h4>
-                    <p>through the interviewing process, i learned about many pain points that users had within the interface and was able to discover new issues to work into my general solutions. these mainly revolved around poor use of space for smaller fields, and a poor UX with scrollable elements throughout the interface. meeting these users proved to be extremely useful, as they were able to help through continued contact within the iterative design phase.</p>
-                    <img src="awpics/sidepanel.png" alt="a new design for a side accordion pane, including each step of the interaction from choosing the category, applying it, and the final screen with a table">
-                    <h4>experience vision</h4>
-                    <p>in addition to the project, the company was also engaged in the UX strategy program offered by centre center. in discussion of UX outcomes after research had been underway, an experience vision was created for the general outcome of this project: <strong>if we do a great job with reorgnization options, we will improve the users' lives by tailoring the layout to their workflow so that they can triage more efficiently.</strong></p>
-                    <div class="imagessolo"><img src="awpics/expvision.jpg" alt="The experience vision comic strip, showcasing an employee's bad dream of the current experience, and followed by various employees working off of their own hardware using different reorgnization options"></div>
-                    <h4>next steps</h4>
-                    <p>after the main research and design iterations were completed, finalized designs were handed off to developers — but an additional part to the project was added. within interviews, issues were brought up about using this triaging interface for deeper investigations and the real estate issues were further stressed. along with findings from previous UXR projects, an ideation and early design phase was started for a new "investigations" interface, with low-fidelity sketches and high-fidelity wireframes created using miro and figma.</p>
-                    <div class="images">
-                        <img src="awpics/investigationslofi.jpg" alt="The first sketch of the investigation UI">
-                        <img src="awpics/investigationshifi.png" alt="The first high-fidelity wireframe of the investigation UI">
-                    </div>
-                </div>
-            </div>
-            <div class="accord-dark" id="scatter">
-                <button class="accordpanel" onclick="swapInfo('scatter')"><i class="fa-solid fa-chevron-right"></i><h3>personal project: scatternote</h3></button>
-                <span class="accordinfo"><em><p>how might we organize our ideas to better solve problems?</p></em></span>
-                <div class="accordbody" style="display: none;">
-                    <p>scatternote is a proof of concept design for a notes app that helps organize your ideas automatically. this was done as a first attempt of a "case study" before my first experience in ux.</p>
-                    <h4>background</h4>
-                    <p>throughout university, i've found myself to be the type of person who loves to write my thoughts down when i feel i'm overwhelmed with life. even in discussion with friends, we all tend to write about our feelings in some sort of way; some friends prefer to use a physical journal, some have a never-ending notes file, some use specialized notes apps, and others use a private or <em>spam</em> social media account.</p>
-                    <p>in my personal experiences trying various options, i've made note of various pros and cons; from the full customization of a physical journal being inaccessible in the dark and requiring stationary to use, to a classic notes file having little customization options but easy accessibility, to the questionable privacy of a venting account.</p>
-                    <div class="imagessolo"><img src="scatterpics/schomeg.png" alt="The landing page for scatternote, with the heading text 'Welcome to Scatternote' and the text 'Scatternote is a different kind of notetaking app. Just type what you need to get done or get off of your mind and we'll do the organizing for you' below, followed by a get started button"></div>
-                    <h4>design process</h4>
-                    <p>from the discussions and my own personal experiece, i was able to group the main types of notes into the categories of needs, wants, or general thoughts. however - sometimes we don't know how to group our thoughts categorically (leading to the never-ending notes file). this lead to the idea that the software would categorize it automatically for you into those groupings, regardless of the style of input (a long-winded paragraph or short three-line memos).</p>
-                    <div class="images">
-                        <img src="scatterpics/scmaing.png" alt="The main page for scatternote, showcasing various notes and the 'take note' button to create a new notes">
-                        <img src="scatterpics/scnoteg.png" alt="The note taking page in scatternotes, with the modal's title of 'new note' and default text prompting the user 'what's up'">
-                    </div>
-                    <h4>design concepts</h4>
-                    <p>this proof of concept was created with material you (material ui 3) guidelines in mind, inspired by the interface on my phone! this design language is a delight to use on a daily basis, where you'll notice various ways the colours change in applications based on your phone's theme, adding a touch of personality to your personal notes app.</p>
-                    <p>the frames can be seen here, or on <a href="https://www.figma.com/file/gd2oFE9QwTF6CXdb1nitxZ/ScatterNote?node-id=0%3A1" target="_blank">the original figma file</a>.</p>
-                    <div class="images">
-                        <img src="scatterpics/scatternotegreen.png" alt="">
-                        <img src="scatterpics/scatternotepurple.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="accord-dark" id="lib">
-                <button class="accordpanel" onclick="swapInfo('lib')"><i class="fa-solid fa-chevron-right"></i><h3>uw library: instructional design</h3></button>
-                <span class="accordinfo"><em><p>how might we design online courseware to effectively teach information literacy?</p></em></span>
-                <div class="accordbody" style="display: none;">
-                    <p>at my work term with the university of waterloo library, i had partially worked with the instructional design team in order to develop and aid in the design of a set of online learning modules. my tasks were split between interface development using H5P, a javascript based open education resource framework, and instructional design for the layout and flow of the modules.</p>
-                    <h4>accessible development</h4>
-                    <p>using H5P, i was tasked to create many interface elements for instructional designers to use within each module. within the 'interactive book' type, necessary functions such as tab groups and having images and text adjacent to one another were not possible. i had both designed and developed these interface elements for use in modules in which i would be filling.</p>
-                    <p>as these modules would be used by students of all abilities, many forms of accessibility testing were undertaken, from colour contrast testing to meet WCAG 2.0 AA standards, to keyboard navigation and screen reader testing with both free options such as ChromeVox and full solutions (on library harware) with JAWS.</p>
-                    <h4>design</h4>
-                    <p>after adequate elements were created and accessible, i completed the storyboarding process for the flow of each module in the information literacy course, using figma designs from my development stage to support the documents with visuals.</p>
-                    <div class="images">
-                        <img src="libpics/libfigma.png" alt="The figma slide representing a part of the lesson">
-                        <img src="libpics/liblive.png" alt="The element live, within the lesson itself">
-                    </div>
-                    <p>links to the modules can be found on the <a href="https://lib.uwaterloo.ca/online_learning/engineering-vls-module-1-information-overload-0" target="_blank">university of waterloo's OLOR</a> by searching for my name.</p>
-                </div>
-            </div>
-            <div class="accord-dark" id="rest">
-                <button class="accordpanel" onclick="swapInfo('rest')"><i class="fa-solid fa-chevron-right"></i><h3>smaller projects</h3></button>
-                <span class="accordinfo"><em><p>how did i learn about design and development?</p></em></span>
-                <div class="accordbody" style="display: none;">
-                    <p>before entering the field of UX, i had done smaller projects in UI and game development, as well as graphic design.</p>
-                    <h4>UI design</h4>
-                    <p><strong>recyc-ai:</strong> an app that helps you sort your waste in the correct bins with the help of AI. personally designed and developed the <a target="_blank" href="https://xd.adobe.com/view/3d7d2107-545c-4ceb-822f-8f74d10b6a63-682e/">prototype</a>, and mainly worked on the UI <a target="_blank" href="https://devpost.com/software/recycai">implementation</a></p>
-                    <p><strong>spotify messaging app:</strong> an idea for a messaging client centred around the popular music streaming service, spotify. designed the <a target="_blank" href="https://www.figma.com/proto/OrAqt7I0UA2kkDOgqoQB7Z/spotify-messaging-app?node-id=5%3A78&scaling=min-zoom">prototype</a>.</p>
-                    <h4>game design</h4>
-                    <p><strong>simple shooter: zone defense:</strong> a simple arcade shooter / zone defense game. <a target="_blank"href="https://openprocessing.org/sketch/1050486">play</a> here.</p>
-                    <p><strong>pow pow punch man:</strong> a "janky" fighting game for two players. personally worked on all of the character designs, and implemented various features and menus. <a target="_blank" href="https://www.greenfoot.org/scenarios/25174">play</a> here</p>
-                    <h4>graphic design</h4>
-                    <p><strong>Edu-Action! infographic:</strong> an infographic made to simplify a mathematical research project for the average student's consumption. personally made all designs and customized the layout using figma. <a target="_blank" href="https://www.edu-action.ca/artwork-galleries?pgid=kvcmybp0-1fad4e26-8f88-47f0-bb70-b06f394fe1c9">read</a> here.</p>
-                    <p><strong>Edu-Action! instructional video:</strong> an instructional video made to relate a statistical concect to popular media forms in order to make learning and understanding easier. made a portion of the drawings and designs for the video. <a target="_blank" href="https://www.youtube.com/watch?v=pO55eteivwc">watch</a> here.</p>
-                </div>
-            </div>
+        <div class="flex flex-col justify-end items-end-safe">
+            <div id="sketch-container"></div>
+            <p class="text-sm pr-4 mt-2">drawing (workshop), 2025</p>
         </div>
-        <div class="page misc" style="display: none;">
-            <h2>courses.</h2>
-            <p>throughout my time at uw i've taken some pretty cool courses. i've also been described by my friends as 'arts student-coded' which is only fitting given that i love learning about the interplay between technology and society from a social science or humanist perspective. furthermore, i went out of my way to get a psychology course approved for a masters in computer science. here are some courses i'd recommend in general:</p>
-            <h3>undergraduate courses</h3>
-            <ul>
-                <li>CS 449: Human-Computer Interaction</li>
-                <li>CS 492: Computing and Discrimination</li>
-                <li>ENGL 292: Rhetorical Theory and Criticism</li>
-                <li>ENGL 306F: Introduction to Semiotics</li>
-                <li>PHIL 324: Social and Political Philosophy</li>
-                <li>PHIL 447/PSYCH 447/PSYCH 470: The Cognitive Science of Society</li>
-                <li>PSYCH 320: Language Development</li>
-                <li>PSYCH 372: Environmental Psychology</li>
-                <li>SDS 260R: Ecology, Society, and Justice: Social Development and the Environment [ <a href="/socialecology">final project</a> ]</li>
-                <li>SDS 322R: Community Engagement and Social Development</li>
-            </ul>
-            <h3>graduate courses</h3>
-            <ul>
-                <li>CS 889: Designing Value-Driven Technology</li>
-                <li>CS 889: Human-Computer Interaction for Art and Creativity [ <a href="./889pictorial.pdf" target="_blank"> project pictorial <i class="fa-solid fa-file-pdf"></i></a> ]</li>
-                <li>PSYCH 704A: Social Psychology</li>
-            </ul>
-            <h2>book list.</h2>
-            <p>recently i've been reading books in a wide range of subjects, from design, to digital culture, to urbanism, and more. my current have read list is:</p>
-            <h3>design, ux, and methods</h3>
-            <ul>
-                <li><em>Universal Methods of Design</em> by Bella Martin & Bruce Hannington</li>
-                <li><em>The User Experience Team of One</em> by Leah Buley</li>
-                <li><em>Interviewing Users</em> by Steve Portigal</li>
-                <li><em>The Design of Everyday Things</em> by Don Norman</li>
-                <li><em>Ruined by Design</em> by Mike Monteiro</li> 
-                <li><em>Design for the Real World</em> by Victor Papanek</li>
-                <li><em>Things We Could Design</em> by Ronald Wakkary</li>
-                <li><em>Design as Art</em> by Bruno Munari</li>
-            </ul>
-            <h3>tech, culture, and technoculture</h3>
-            <ul>
-                <li><em>Digital Minimalism</em> by Cal Newport</li>
-                <li><em>Memes in Digital Culture</em> by Limor Shifman</li>
-                <li><em>Living in Data</em> by Jer Thorp</li>
-                <li><em>Because Internet</em> by Gretchen McChulloch</li>
-                <li><em>The Internet Trap</em> by Matthew Hindman</li>
-                <li><em>The Alignment Problem</em> by Brian Christian</li>
-            </ul>
-            <h3>urbanism, climate, and community</h3>
-            <ul>
-                <li><em>Survival of the City</em> by Edward Glaeser & David Cutler</li>
-                <li><em>Dream States</em> by John Lorinc</li>
-                <li><em>On Community</em> by Casey Plett</li>
-                <li><em>Slow Down</em> by Kōhei Saitō</li>
-                <li><em>In the Midst of Things</em> by Mike Owen Benediktsson <em>(in-progress)</em></li>
-            </ul>
-            <h3>semiotics, cogsci, and philosophy</h3>
-            <ul>
-                <li><em>Mythologies</em> by Roland Barthes <em>(selected essays & myth today, for ENGL 306F)</em></li>
-                <li><em>Blueprint</em> by Nicholas Christakis <em>(for PSYCH 447)</em></li>
-                <li><em>The Constitution of Knowledge</em> by Jonathan Rauch <em>(for PSYCH 447)</em></li>
-            </ul>
-            <h3>in-progress and to-read</h3>
-            <ul>
-                <li><em>Agonistic Assemblies</em> edited by Markus Miessen <em>(in-progress)</em></li>
-            </ul>
-            <ul>
-                <li><em>Lurking</em> by Joanne McNeil</li>
-                <li><em>Work Pray Code</em> by Carolyn Chen</li>
-                <li><em>Hacking Diversity</em> by Christina Dunbar-Hester</li>
-                <li><em>The Shame Machine</em> by Cathy O'Neil</li>
-                <li><em>User Friendly</em> by Cliff Kuang & Rober Fabricant</li>
-            </ul>
-            <p>i was (graciously) lended the first three books about ux design and research from my supervisor at my first co-op job with the university of waterloo's library after showing interest in ux work. other books are either ones i've caught on the shelf of indigo, or got recommended to me by happenstance or the algorithm.</p>
-            <h2>music.</h2>
-            <p>i listen to a lot of music. as in over 75k minutes in 2022 on spotify. you can see my current obsessions below:</p>
-            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1EpwTC3Xr4fHXq?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            <h2>beliefs.</h2>
-            <p>tech can do so much harm in the world, and us as technologists/designers/whatever you want to call yourself need to do something to fix it. through both my studies and practice i've seen both the harm and good that tech can being to society and it's only strengthened my beliefs that we need to care deeply about not just the archetypical user - but the human behind the screen. for more, see <a href="/socialecology">my manifesto</a> (which was my final project for SDS 260R).</p>
-            <p><em>"You and I,... everyone on this planet, we live in data, but we have not, as of yet, figured out how to be citizens of it. To not only inhabit data, but also to participate in it, to find agency, to actively engage and meaningfully resist." —Jer Thorp, Living in Data</em></p>
-            <h2>font.</h2>
-            <p>the font used on this page is <a href="https://brailleinstitute.org/freefont">atkinson hyperlegible</a>, a font that is more readable for people with low vision. it's free to use with google fonts and it looks pretty. i'd recommend it.</p>
-        </div>
-        <div class="page contact" style="display: none;">
-            <p>you can find me pretty much anywhere, but mainly on:</p>
-            
-
-        </div>
-        <div class="page navigation" style="display: none;">
-            <nav style="flex-direction: column;">
-                <button id="button-dark" onclick="changeDiv('about')">about</button>
-                <button id="button-dark" onclick="changeDiv('projects')">projects</button>
-                <button id="button-dark" onclick="changeDiv('misc')">misc</button>
-                <!--button id="button-dark" onclick="changeDiv('contact')">contact</button--> 
-            </nav>
-        </div>
+        <script type="module" src="/p5/drawing.js"></script>
     </body>
 </html>

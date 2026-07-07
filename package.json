@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "npx @tailwindcss/cli -i style.css -o output.css"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "tailwindcss": "^4.3.2"
+  }
+}
